@@ -2339,7 +2339,36 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         { name: `${departureCity}${arrivalIata ? ` to ${arrivalCity}` : normalizedFlights.length > 0 ? ` to ${normalizedFlights.slice(0, 2).map(f => f.city).join(', ')}${normalizedFlights.length > 2 ? ` and ${normalizedFlights.length - 2} more` : ''}` : ''}`, url: locale === 'en' ? `/airlines/${airlineCode}/${params.route}` : `/${locale}/airlines/${airlineCode}/${params.route}` },
       ])} />
 
-      {/* Organization Schema */}
+      {/* Airline Organization Schema with Real Contact Data */}
+      {localAirlineContact && (
+        <SchemaOrg data={{
+          "@context": "https://schema.org",
+          "@type": "Airline",
+          "name": localAirlineContact.name,
+          "iataCode": localAirlineContact.iata_code,
+          "url": localAirlineContact.website,
+          "logo": getAirlineLogoUrl(airlineCode, 'large'),
+          "telephone": localAirlineContact.phone,
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": localAirlineContact.address,
+            "addressLocality": localAirlineContact.country,
+            "postalCode": localAirlineContact.zipcode,
+            "addressCountry": localAirlineContact.country_code
+          },
+          "sameAs": [
+            localAirlineContact.website,
+            localAirlineContact.twitter ? `https://${localAirlineContact.twitter}` : null,
+            localAirlineContact.facebook ? `https://${localAirlineContact.facebook}` : null,
+            localAirlineContact.instagram_url,
+            localAirlineContact.linkedin ? `https://${localAirlineContact.linkedin}` : null,
+            localAirlineContact.wikipedia_url,
+            localAirlineContact.tripadvisor_url
+          ].filter(Boolean)
+        }} />
+      )}
+
+      {/* Site Organization Schema */}
       <SchemaOrg data={{
         "@context": "https://schema.org",
         "@type": "Organization",
