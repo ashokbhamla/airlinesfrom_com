@@ -45,8 +45,8 @@ try {
   }
 
   console.log('\n🎉 All sitemaps generated successfully!');
-  console.log(`🌐 Main sitemap: https://airlinesmap.com/sitemap.xml`);
-  console.log(`📁 Dynamic sitemaps: https://airlinesmap.com/sitemaps/`);
+  console.log(`🌐 Main sitemap: https://airlinesfrom.com/sitemap.xml`);
+  console.log(`📁 Dynamic sitemaps: https://airlinesfrom.com/sitemaps/`);
 
 } catch (error) {
   console.error('\n❌ Error during sitemap generation:', error.message);

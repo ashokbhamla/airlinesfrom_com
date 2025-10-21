@@ -6,7 +6,7 @@ export async function GET(request: NextRequest) {
     const arrival_iata = searchParams.get('arrival_iata');
     const departure_iata = searchParams.get('departure_iata');
     const lang = searchParams.get('lang_id');
-    const domain_id = searchParams.get('domain_id') || process.env.NEXT_PUBLIC_DOMAIN || 'airlinesmap.com';
+    const domain_id = searchParams.get('domain_id') || process.env.NEXT_PUBLIC_DOMAIN || 'airlinesfrom.com';
 
     if (!arrival_iata || !departure_iata || !lang || !domain_id) {
       return NextResponse.json({ error: 'Missing required parameters' }, { status: 400 });

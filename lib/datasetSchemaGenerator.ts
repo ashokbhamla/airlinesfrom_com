@@ -136,8 +136,8 @@ export function generateDatasetSchema({
     "url": pageUrl,
     "creator": {
       "@type": "Organization",
-      "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesMap",
-      "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"
+      "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
+      "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"
     },
     "license": process.env.NEXT_PUBLIC_DATASET_LICENSE || "https://creativecommons.org/licenses/by/4.0/",
     "variableMeasured": [
@@ -179,8 +179,8 @@ export function generateDatasetSchema({
     "url": pageUrl,
     "creator": {
       "@type": "Organization",
-      "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesMap",
-      "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"
+      "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
+      "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"
     },
     "license": process.env.NEXT_PUBLIC_DATASET_LICENSE || "https://creativecommons.org/licenses/by/4.0/",
     "variableMeasured": [
@@ -231,8 +231,8 @@ function generateMonthlyDataItems(
       "description": `Comprehensive flight pricing, rainfall, and temperature data for ${monthName} ${currentYear} including average prices in USD, monthly rainfall in inches, and temperature in Fahrenheit.`,
       "creator": {
         "@type": "Organization",
-        "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesMap",
-        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"
+        "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
+        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"
       },
       "license": process.env.NEXT_PUBLIC_DATASET_LICENSE || "https://creativecommons.org/licenses/by/4.0/",
       "variableMeasured": [
@@ -277,8 +277,8 @@ function generateWeeklyDataItems(priceData: GraphData[], dayNames: string[]) {
       "description": `Weekly flight pricing data for ${dayName} including average prices in USD to help travelers identify the best day of the week for booking flights.`,
       "creator": {
         "@type": "Organization",
-        "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesMap",
-        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"
+        "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
+        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"
       },
       "license": process.env.NEXT_PUBLIC_DATASET_LICENSE || "https://creativecommons.org/licenses/by/4.0/",
       "variableMeasured": [

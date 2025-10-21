@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Sitemap Utilities for AirlinesMap
+ * Sitemap Utilities for AirlinesFrom
  * 
  * This script provides utilities to manage and validate the sitemap
  * 
@@ -14,7 +14,7 @@
 const https = require('https');
 const http = require('http');
 
-const BASE_URL = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesmap.com';
+const BASE_URL = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com';
 const LOCAL_URL = 'http://localhost:3000';
 
 function makeRequest(url) {
@@ -151,7 +151,7 @@ async function generateReport() {
 async function main() {
   const command = process.argv[2];
   
-  console.log('🚀 AirlinesMap Sitemap Utilities\n');
+  console.log('🚀 AirlinesFrom Sitemap Utilities\n');
   
   switch (command) {
     case 'validate':

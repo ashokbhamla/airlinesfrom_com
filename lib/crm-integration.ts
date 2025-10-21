@@ -138,7 +138,7 @@ function transformDataForCRM(bookingData: BookingData) {
     tripType: bookingData.flightDetails.tripType?.toLowerCase() === 'one-way' ? 'oneway' : 'roundtrip',
     numberOfPassengers: bookingData.flightDetails.travelers || 1,
     source: 'landing', // Source from airlinesmap search page
-    notes: `Flight: ${bookingData.flightDetails.fromCity || bookingData.flightDetails.from} to ${bookingData.flightDetails.toCity || bookingData.flightDetails.to}${bookingData.flightDetails.price ? `. Estimated Price: $${bookingData.flightDetails.price}` : ''}. Class: ${bookingData.flightDetails.class || 'Economy'}. Submitted from AirlinesMap search page.`,
+    notes: `Flight: ${bookingData.flightDetails.fromCity || bookingData.flightDetails.from} to ${bookingData.flightDetails.toCity || bookingData.flightDetails.to}${bookingData.flightDetails.price ? `. Estimated Price: $${bookingData.flightDetails.price}` : ''}. Class: ${bookingData.flightDetails.class || 'Economy'}. Submitted from AirlinesFrom search page.`,
   };
 
   // Example 2: If your CRM uses a different structure

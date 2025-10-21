@@ -7,7 +7,7 @@ import { Locale } from './i18n';
  * @returns Full canonical URL
  */
 export function generateCanonicalUrl(path: string, locale: Locale): string {
-  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesmap.com';
+  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com';
   
   if (!baseUrl) {
     throw new Error('NEXT_PUBLIC_DOMAIN environment variable is required');
@@ -31,7 +31,7 @@ export function generateCanonicalUrl(path: string, locale: Locale): string {
  * @returns Object with language codes as keys and URLs as values
  */
 export function generateAlternateUrls(path: string): Record<string, string> {
-  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesmap.com';
+  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com';
   
   if (!baseUrl) {
     throw new Error('NEXT_PUBLIC_DOMAIN environment variable is required');

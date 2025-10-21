@@ -36,10 +36,10 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const canonicalUrl = `${baseUrl}${localePath}`;
 
   // Use translated company name based on locale
-  const companyName = locale === 'en' ? 'AirlinesMap' : 
-                     locale === 'es' ? 'AirlinesMap' :
-                     locale === 'ru' ? 'AirlinesMap' :
-                     locale === 'fr' ? 'AirlinesMap' : 'AirlinesMap';
+  const companyName = locale === 'en' ? 'AirlinesFrom' : 
+                     locale === 'es' ? 'AirlinesFrom' :
+                     locale === 'ru' ? 'AirlinesFrom' :
+                     locale === 'fr' ? 'AirlinesFrom' : 'AirlinesFrom';
 
   return {
     metadataBase: new URL(baseUrl),

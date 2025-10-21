@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: {
-      template: `%s | ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap'}`,
-      default: `Search Flights | ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap'}`,
+      template: `%s | ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'}`,
+      default: `Search Flights | ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'}`,
     },
   description: 'Search and compare flights from multiple airlines to find the best deals.',
   keywords: 'flight search, compare flights, airline tickets, travel deals, flight booking',
@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: `Search Flights | ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap'}`,
+    title: `Search Flights | ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'}`,
     description: 'Search and compare flights from multiple airlines to find the best deals.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: `Search Flights | ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap'}`,
+    title: `Search Flights | ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'}`,
     description: 'Search and compare flights from multiple airlines to find the best deals.',
   },
 };

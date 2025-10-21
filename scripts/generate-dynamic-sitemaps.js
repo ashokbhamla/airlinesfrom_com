@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Configuration
-const BASE_URL = 'https://airlinesmap.com';
+const BASE_URL = 'https://airlinesfrom.com';
 const LOCALES = ['en', 'es', 'ru', 'fr'];
 const OUTPUT_DIR = './public/sitemaps';
 const API_BASE = 'https://api.triposia.com/real/urls';
@@ -216,7 +216,7 @@ async function generateDynamicSitemaps() {
   const sitemapTsContent = `import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://airlinesmap.com';
+  const baseUrl = 'https://airlinesfrom.com';
   
   // Point to the generated sitemap index
   return [{

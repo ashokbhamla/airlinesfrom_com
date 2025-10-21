@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://airlinesmap.com';
+  const baseUrl = 'https://airlinesfrom.com';
   
   // Point to the generated sitemap index
   return [{

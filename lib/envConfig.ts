@@ -2,7 +2,7 @@
 export const envConfig = {
   // Header Configuration
   header: {
-    title: process.env.NEXT_PUBLIC_HEADER_TITLE || 'AirlinesMap',
+    title: process.env.NEXT_PUBLIC_HEADER_TITLE || 'AirlinesFrom',
     metaDescription: process.env.NEXT_PUBLIC_HEADER_META_DESCRIPTION || 'Book flights, hotels, and cars',
     navigation: {
       airlines: process.env.NEXT_PUBLIC_NAV_AIRLINES || '/airlines',
@@ -10,15 +10,15 @@ export const envConfig = {
       login: process.env.NEXT_PUBLIC_NAV_LOGIN || '/login'
     },
     socialMedia: {
-      facebook: process.env.NEXT_PUBLIC_FACEBOOK_URL || 'https://facebook.com/airlinesmap',
-      twitter: process.env.NEXT_PUBLIC_TWITTER_URL || 'https://twitter.com/airlinesmap',
-      instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://instagram.com/airlinesmap'
+      facebook: process.env.NEXT_PUBLIC_FACEBOOK_URL || 'https://facebook.com/airlinesfrom',
+      twitter: process.env.NEXT_PUBLIC_TWITTER_URL || 'https://twitter.com/airlinesfrom',
+      instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://instagram.com/airlinesfrom'
     }
   },
   
   // Footer Configuration
   footer: {
-    copyright: process.env.NEXT_PUBLIC_FOOTER_COPYRIGHT || '© 2018-2025 AirlinesMap Inc. All rights reserved.',
+    copyright: process.env.NEXT_PUBLIC_FOOTER_COPYRIGHT || '© 2018-2025 AirlinesFrom Inc. All rights reserved.',
     description1: process.env.NEXT_PUBLIC_FOOTER_DESCRIPTION_1 || 'Helps you find the cheapest flight deals to any destination with ease.',
     description2: process.env.NEXT_PUBLIC_FOOTER_DESCRIPTION_2 || 'Browse through the best hotels and find exclusive deals.',
     navigation: {

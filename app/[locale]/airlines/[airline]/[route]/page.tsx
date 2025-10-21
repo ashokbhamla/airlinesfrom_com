@@ -428,9 +428,9 @@ export async function generateMetadata({ params }: { params: { locale: string; a
         `${getAirlineName(airlineCode, contentData, airlineContactInfo)} flights ${getCityName(departureIata)} ${getCityName(arrivalIata)}, ${getCityName(departureIata)} to ${getCityName(arrivalIata)} ${getAirlineName(airlineCode, contentData, airlineContactInfo)}` :
         `${getAirlineName(airlineCode, contentData, airlineContactInfo)} flights ${getCityName(departureIata)}, ${getCityName(departureIata)} ${getAirlineName(airlineCode, contentData, airlineContactInfo)}`
       ),
-      authors: [{ name: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap' }],
-      creator: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap',
-      publisher: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap',
+      authors: [{ name: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom' }],
+      creator: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom',
+      publisher: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom',
       robots: {
         index: true,
         follow: true,
@@ -448,7 +448,7 @@ export async function generateMetadata({ params }: { params: { locale: string; a
         url: canonicalUrl,
         type: 'website',
         locale: locale === 'es' ? 'es_ES' : locale === 'ru' ? 'ru_RU' : locale === 'fr' ? 'fr_FR' : 'en_US',
-        siteName: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap',
+        siteName: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom',
         images: [
           {
             url: getAirlineLogoUrl(airlineCode, 'large'),
@@ -519,9 +519,9 @@ export async function generateMetadata({ params }: { params: { locale: string; a
       keywords: arrivalIata ?
         `${fallbackAirlineName} flights ${getCityName(departureIata)} ${getCityName(arrivalIata)}, ${getCityName(departureIata)} to ${getCityName(arrivalIata)} ${fallbackAirlineName}` :
         `${fallbackAirlineName} flights ${getCityName(departureIata)}, ${getCityName(departureIata)} ${fallbackAirlineName}`,
-      authors: [{ name: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap' }],
-      creator: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap',
-      publisher: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap',
+      authors: [{ name: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom' }],
+      creator: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom',
+      publisher: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom',
       robots: {
         index: true,
         follow: true,
@@ -539,7 +539,7 @@ export async function generateMetadata({ params }: { params: { locale: string; a
         url: canonicalUrl,
         type: 'website',
         locale: locale === 'es' ? 'es_ES' : locale === 'ru' ? 'ru_RU' : locale === 'fr' ? 'fr_FR' : 'en_US',
-        siteName: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap',
+        siteName: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom',
         images: [
           {
             url: getAirlineLogoUrl(airlineCode, 'large'),
@@ -2331,7 +2331,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
       <SchemaOrg data={{
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesMap",
+        "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
         "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com",
         "logo": process.env.NEXT_PUBLIC_COMPANY_LOGO || "https://airlinesmap.com/logo.png",
         "description": process.env.NEXT_PUBLIC_COMPANY_DESCRIPTION || "Find the best flight deals, hotels, and travel packages",
@@ -2358,7 +2358,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
       <SchemaOrg data={{
         "@context": "https://schema.org",
         "@type": "TravelAgency",
-        "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesMap",
+        "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
         "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com",
         "description": process.env.NEXT_PUBLIC_COMPANY_DESCRIPTION || "Find the best flight deals, hotels, and travel packages",
         "address": {
@@ -2377,7 +2377,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
       <SchemaOrg data={{
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": process.env.NEXT_PUBLIC_SITE_NAME || "AirlinesMap",
+        "name": process.env.NEXT_PUBLIC_SITE_NAME || "AirlinesFrom",
         "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com",
         "description": process.env.NEXT_PUBLIC_SITE_DESCRIPTION || "Find the best flight deals, hotels, and travel packages",
         "inLanguage": locale === 'en' ? 'en-US' : locale === 'es' ? 'es-ES' : locale === 'ru' ? 'ru-RU' : 'fr-FR',
@@ -2391,7 +2391,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         },
         "publisher": {
           "@type": "Organization",
-          "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesMap",
+          "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
           "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"
         }
       }} />
@@ -2877,7 +2877,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
       <SchemaOrg data={{
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesMap",
+        "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
         "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com",
         "potentialAction": {
           "@type": "SearchAction",
@@ -2893,7 +2893,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
       <SchemaOrg data={{
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesMap",
+        "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
         "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com",
         "logo": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"}/logo.png`,
         "description": process.env.NEXT_PUBLIC_COMPANY_DESCRIPTION || "Compare airlines and find the best flight deals",
@@ -3005,7 +3005,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
       <SchemaOrg data={{
         "@context": "https://schema.org",
         "@type": "TravelAgency",
-        "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesMap",
+        "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
         "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com",
         "description": process.env.NEXT_PUBLIC_COMPANY_DESCRIPTION || "Compare airlines and find the best flight deals",
         "address": {
@@ -3076,11 +3076,11 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "description": contentData?.description || contentData?.meta_description || `Find the best ${airlineName} flight deals from ${departureCity} to ${arrivalCity}`,
         "author": {
           "@type": "Organization",
-          "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesMap"
+          "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom"
         },
         "publisher": {
           "@type": "Organization",
-          "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesMap",
+          "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
           "logo": {
             "@type": "ImageObject",
             "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"}/logo.png`
@@ -3165,7 +3165,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"}/airlines/${airlineCode}/${params.route}`,
         "creator": {
           "@type": "Organization",
-          "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesMap"
+          "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom"
         },
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "variableMeasured": [
@@ -3205,7 +3205,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
       <SchemaOrg data={{
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesMap",
+        "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
         "description": process.env.NEXT_PUBLIC_COMPANY_DESCRIPTION || "Compare airlines and find the best flight deals",
         "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com",
         "telephone": process.env.NEXT_PUBLIC_PHONE || "+1-888-319-6206",
@@ -3232,7 +3232,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "description": `Book ${airlineName} flights from ${departureCity} to ${arrivalCity} with the best prices and deals`,
         "provider": {
           "@type": "Organization",
-          "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesMap"
+          "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom"
         },
         "areaServed": {
           "@type": "Country",
@@ -3322,7 +3322,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"}/airlines/${airlineCode}/${params.route}`,
         "creator": {
           "@type": "Organization",
-          "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesMap"
+          "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom"
         },
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "variableMeasured": [

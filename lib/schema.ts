@@ -1,9 +1,9 @@
 type Json = Record<string, any>;
 
 export function orgSchema(header: any): Json | null {
-  const companyName = process.env.NEXT_PUBLIC_COMPANY_NAME || 'airlinesmap.com';
-  const companyUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesmap.com';
-  const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL || 'support@airlinesmap.com';
+  const companyName = process.env.NEXT_PUBLIC_COMPANY_NAME || 'airlinesfrom.com';
+  const companyUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com';
+  const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL || 'support@airlinesfrom.com';
   const companyPhone = process.env.NEXT_PUBLIC_COMPANY_PHONE || '+1-888-319-6206';
   const companyAddress = process.env.NEXT_PUBLIC_COMPANY_ADDRESS || '8th the green suite b, Dover, DE 19901, US';
   const companyLogo = process.env.NEXT_PUBLIC_COMPANY_LOGO || `${companyUrl}/logo.png`;
@@ -25,16 +25,16 @@ export function orgSchema(header: any): Json | null {
     },
     logo: companyLogo,
     sameAs: [
-      process.env.NEXT_PUBLIC_FACEBOOK_URL || 'https://facebook.com/airlinesmap',
-      process.env.NEXT_PUBLIC_TWITTER_URL || 'https://twitter.com/airlinesmap',
-      process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://instagram.com/airlinesmap'
+      process.env.NEXT_PUBLIC_FACEBOOK_URL || 'https://facebook.com/airlinesfrom',
+      process.env.NEXT_PUBLIC_TWITTER_URL || 'https://twitter.com/airlinesfrom',
+      process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://instagram.com/airlinesfrom'
     ],
   };
 }
 
 export function websiteSchema(header: any): Json {
-  const companyName = process.env.NEXT_PUBLIC_COMPANY_NAME || 'airlinesmap.com';
-  const companyUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesmap.com';
+  const companyName = process.env.NEXT_PUBLIC_COMPANY_NAME || 'airlinesfrom.com';
+  const companyUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com';
   
   return {
     '@context': 'https://schema.org',
@@ -50,9 +50,9 @@ export function websiteSchema(header: any): Json {
 }
 
 export function localBusinessSchema(): Json {
-  const companyName = process.env.NEXT_PUBLIC_COMPANY_NAME || 'airlinesmap.com';
-  const companyUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesmap.com';
-  const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL || 'support@airlinesmap.com';
+  const companyName = process.env.NEXT_PUBLIC_COMPANY_NAME || 'airlinesfrom.com';
+  const companyUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com';
+  const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL || 'support@airlinesfrom.com';
   const companyPhone = process.env.NEXT_PUBLIC_COMPANY_PHONE || '+1-888-319-6206';
   
   return {

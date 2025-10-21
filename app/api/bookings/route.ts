@@ -80,7 +80,7 @@ export async function POST(request: NextRequest) {
           tripType: body.flightDetails.returnDate ? 'roundtrip' : 'oneway',
           numberOfPassengers: body.flightDetails.travelers || 1,
           source: 'landing',
-          notes: `Flight: ${body.flightDetails.fromCity || body.flightDetails.from} to ${body.flightDetails.toCity || body.flightDetails.to}${body.flightDetails.price ? `. Price: $${body.flightDetails.price}` : ''}. Class: ${body.flightDetails.class || 'Economy'}. Submitted from AirlinesMap search page.`,
+          notes: `Flight: ${body.flightDetails.fromCity || body.flightDetails.from} to ${body.flightDetails.toCity || body.flightDetails.to}${body.flightDetails.price ? `. Price: $${body.flightDetails.price}` : ''}. Class: ${body.flightDetails.class || 'Economy'}. Submitted from AirlinesFrom search page.`,
         }),
       });
 

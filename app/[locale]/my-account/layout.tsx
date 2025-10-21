@@ -7,10 +7,10 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   
   return {
     title: {
-      template: `%s | ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap'} - My Account`,
-      default: `My Account - Manage Your Travel Profile | ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap'}`
+      template: `%s | ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'} - My Account`,
+      default: `My Account - Manage Your Travel Profile | ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'}`
     },
-    description: `Manage your ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap'} account, view booking history, update travel preferences, and access exclusive member benefits.`,
+    description: `Manage your ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'} account, view booking history, update travel preferences, and access exclusive member benefits.`,
     keywords: [
       'my account',
       'user dashboard',
@@ -22,9 +22,9 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       'hotel bookings',
       'travel management'
     ],
-    authors: [{ name: `${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap'} Team` }],
-    creator: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap',
-    publisher: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap',
+    authors: [{ name: `${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'} Team` }],
+    creator: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom',
+    publisher: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom',
     formatDetection: {
       email: false,
       address: false,
@@ -37,9 +37,9 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     },
     openGraph: {
       title: 'My Account - Manage Your Travel Profile',
-      description: `Manage your ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap'} account, view booking history, update travel preferences, and access exclusive member benefits.`,
+      description: `Manage your ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'} account, view booking history, update travel preferences, and access exclusive member benefits.`,
       url: `${baseUrl}/${locale}/my-account`,
-      siteName: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap',
+      siteName: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom',
       locale: locale,
       type: 'website',
       images: [
@@ -47,14 +47,14 @@ export async function generateMetadata({ params }: { params: { locale: string } 
           url: `${baseUrl}/images/account-dashboard-og.jpg`,
           width: 1200,
           height: 630,
-          alt: `My Account Dashboard - ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap'}`,
+          alt: `My Account Dashboard - ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'}`,
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
       title: 'My Account - Manage Your Travel Profile',
-      description: `Manage your ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesMap'} account, view booking history, update travel preferences, and access exclusive member benefits.`,
+      description: `Manage your ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'} account, view booking history, update travel preferences, and access exclusive member benefits.`,
       images: [`${baseUrl}/images/account-dashboard-og.jpg`],
     },
     robots: {
