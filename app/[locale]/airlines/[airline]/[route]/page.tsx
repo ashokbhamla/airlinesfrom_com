@@ -20,6 +20,7 @@ import {
 import dynamic from 'next/dynamic';
 import { normalizeFlights, NormalizedFlight } from '@/lib/flightNormalizer';
 import { getAirlineLogoUrl, getAirportImageUrl } from '@/lib/cdn';
+import { getAirlineContactServer } from '@/lib/airline-contact';
 
 // Dynamic imports for client components with SSR enabled for SEO and performance optimization
 const FlightSearchBox = dynamic(() => import('@/components/FlightSearchBox'), { 
@@ -658,6 +659,9 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
     });
     return result;
   };
+
+  // Fetch local airline contact information
+  const localAirlineContact = await getAirlineContactServer(airlineCode);
 
   try {
     // Fetch all data in parallel for better performance with Redis caching
@@ -2175,60 +2179,13 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
                   mb: 1,
                   textAlign: 'left'
                 }}>
-                  {t.contactInfo?.customerService || 'Customer Service'}
+                  {t.contactInfo?.contactInformation || 'Contact Information'}
                 </Typography>
                 <Typography variant="body1" sx={{ color: '#4a5568', mb: 1 }}>
-                  {t.contactInfo?.phone || 'Phone'}: {airlineDetails?.phone || '+1 (800) 123-4567'}
+                  {t.contactInfo?.phone || 'Phone'}: <a href={`tel:${localAirlineContact?.phone}`} style={{ color: '#1e3a8a', textDecoration: 'none' }}>{localAirlineContact?.phone || airlineContactInfo?.phone || '+1-888-319-6206'}</a>
                 </Typography>
                 <Typography variant="body1" sx={{ color: '#4a5568', mb: 1 }}>
-                  {t.contactInfo?.email || 'Email'}: {airlineDetails?.email || `customer.service@${airlineCode.toLowerCase()}.com`}
-                </Typography>
-                <Typography variant="body1" sx={{ color: '#4a5568' }}>
-                  {t.contactInfo?.hours || 'Hours'}: {airlineDetails?.service_hours || '24/7 Customer Support'}
-                </Typography>
-              </Box>
-            </Grid>
-            
-            <Grid item xs={12} md={6}>
-              <Box sx={{ mb: 3 }}>
-                <Typography variant="h6" sx={{ 
-                  fontWeight: 600, 
-                  color: '#1e3a8a', 
-                  mb: 1,
-                  textAlign: 'left'
-                }}>
-                  {t.contactInfo?.bookingReservations || 'Booking & Reservations'}
-                </Typography>
-                <Typography variant="body1" sx={{ color: '#4a5568', mb: 1 }}>
-                  {t.contactInfo?.phone || 'Phone'}: {airlineDetails?.phone || '+1 (800) 987-6543'}
-                </Typography>
-                <Typography variant="body1" sx={{ color: '#4a5568', mb: 1 }}>
-                  {t.contactInfo?.email || 'Email'}: {airlineDetails?.reservations_email || `reservations@${airlineCode.toLowerCase()}.com`}
-                </Typography>
-                <Typography variant="body1" sx={{ color: '#4a5568' }}>
-                  {t.contactInfo?.online || 'Online'}: {airlineDetails?.url || `${airlineCode.toLowerCase()}.com`}
-                </Typography>
-              </Box>
-            </Grid>
-            
-            <Grid item xs={12} md={6}>
-              <Box sx={{ mb: 3 }}>
-                <Typography variant="h6" sx={{ 
-                  fontWeight: 600, 
-                  color: '#1e3a8a', 
-                  mb: 1,
-                  textAlign: 'left'
-                }}>
-                  {t.contactInfo?.baggageInformation || 'Baggage Information'}
-                </Typography>
-                <Typography variant="body1" sx={{ color: '#4a5568', mb: 1 }}>
-                  {t.contactInfo?.phone || 'Phone'}: {airlineDetails?.phone || '+1-888-319-6206'}
-                </Typography>
-                <Typography variant="body1" sx={{ color: '#4a5568', mb: 1 }}>
-                  {t.contactInfo?.email || 'Email'}: {airlineDetails?.baggage_email || `baggage@${airlineCode.toLowerCase()}.com`}
-                </Typography>
-                <Typography variant="body1" sx={{ color: '#4a5568' }}>
-                  {t.contactInfo?.lostFound || 'Lost & Found'}: {airlineDetails?.phone || '+1-888-319-6206'}
+                  {t.contactInfo?.website || 'Website'}: <a href={localAirlineContact?.website} target="_blank" rel="noopener noreferrer" style={{ color: '#1e3a8a', textDecoration: 'none' }}>{localAirlineContact?.website || `www.${airlineCode.toLowerCase()}.com`}</a>
                 </Typography>
               </Box>
             </Grid>
@@ -2244,29 +2201,74 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
                   {t.contactInfo?.corporateOffice || 'Corporate Office'}
                 </Typography>
                 <Typography variant="body1" sx={{ color: '#4a5568', mb: 1 }}>
-                  <strong>{airlineName}</strong> {t.contactInfo?.headquarters || 'Airlines Headquarters'}
+                  <strong>{localAirlineContact?.name || airlineName}</strong>
                 </Typography>
-                {airlineDetails?.address && (
+                {localAirlineContact?.address && (
                   <Typography variant="body1" sx={{ color: '#4a5568', mb: 1 }}>
-                    {airlineDetails.address}
+                    {localAirlineContact.address}
                   </Typography>
                 )}
-                {airlineDetails?.city && airlineDetails?.state && (
+                {localAirlineContact?.country && (
                   <Typography variant="body1" sx={{ color: '#4a5568', mb: 1 }}>
-                    {airlineDetails.city}, {airlineDetails.state}
+                    {localAirlineContact.country} {localAirlineContact.zipcode ? `- ${localAirlineContact.zipcode}` : ''}
                   </Typography>
                 )}
-                {airlineDetails?.zipcode && (
+              </Box>
+            </Grid>
+            
+            <Grid item xs={12} md={6}>
+              <Box sx={{ mb: 3 }}>
+                <Typography variant="h6" sx={{ 
+                  fontWeight: 600, 
+                  color: '#1e3a8a', 
+                  mb: 1,
+                  textAlign: 'left'
+                }}>
+                  {t.contactInfo?.socialMedia || 'Follow Us'}
+                </Typography>
+                {localAirlineContact?.twitter && (
                   <Typography variant="body1" sx={{ color: '#4a5568', mb: 1 }}>
-                    {airlineDetails.zipcode}
+                    Twitter: <a href={`https://${localAirlineContact.twitter}`} target="_blank" rel="noopener noreferrer" style={{ color: '#1e3a8a' }}>@{localAirlineContact.twitter.split('/').pop()}</a>
                   </Typography>
                 )}
-                <Typography variant="body1" sx={{ color: '#4a5568', mb: 1 }}>
-                  {airlineDetails?.country || 'India'}
+                {localAirlineContact?.facebook && (
+                  <Typography variant="body1" sx={{ color: '#4a5568', mb: 1 }}>
+                    Facebook: <a href={`https://${localAirlineContact.facebook}`} target="_blank" rel="noopener noreferrer" style={{ color: '#1e3a8a' }}>facebook.com/{localAirlineContact.facebook.split('/').pop()}</a>
+                  </Typography>
+                )}
+                {localAirlineContact?.instagram_url && (
+                  <Typography variant="body1" sx={{ color: '#4a5568', mb: 1 }}>
+                    Instagram: <a href={localAirlineContact.instagram_url} target="_blank" rel="noopener noreferrer" style={{ color: '#1e3a8a' }}>@{localAirlineContact.instagram_url.split('/').filter(Boolean).pop()}</a>
+                  </Typography>
+                )}
+                {localAirlineContact?.linkedin && (
+                  <Typography variant="body1" sx={{ color: '#4a5568', mb: 1 }}>
+                    LinkedIn: <a href={`https://${localAirlineContact.linkedin}`} target="_blank" rel="noopener noreferrer" style={{ color: '#1e3a8a' }}>linkedin.com/{localAirlineContact.linkedin.split('/').pop()}</a>
+                  </Typography>
+                )}
+              </Box>
+            </Grid>
+            
+            <Grid item xs={12} md={6}>
+              <Box sx={{ mb: 3 }}>
+                <Typography variant="h6" sx={{ 
+                  fontWeight: 600, 
+                  color: '#1e3a8a', 
+                  mb: 1,
+                  textAlign: 'left'
+                }}>
+                  {t.contactInfo?.moreInfo || 'More Information'}
                 </Typography>
-                <Typography variant="body1" sx={{ color: '#4a5568' }}>
-                  Phone: {airlineDetails?.phone || '+1-888-319-6206'}
-                </Typography>
+                {localAirlineContact?.wikipedia_url && (
+                  <Typography variant="body1" sx={{ color: '#4a5568', mb: 1 }}>
+                    Wikipedia: <a href={localAirlineContact.wikipedia_url} target="_blank" rel="noopener noreferrer" style={{ color: '#1e3a8a' }}>About {airlineName}</a>
+                  </Typography>
+                )}
+                {localAirlineContact?.tripadvisor_url && (
+                  <Typography variant="body1" sx={{ color: '#4a5568', mb: 1 }}>
+                    TripAdvisor: <a href={localAirlineContact.tripadvisor_url} target="_blank" rel="noopener noreferrer" style={{ color: '#1e3a8a' }}>Read Reviews</a>
+                  </Typography>
+                )}
               </Box>
             </Grid>
           </Grid>
