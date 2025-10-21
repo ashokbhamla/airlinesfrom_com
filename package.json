@@ -1,0 +1,51 @@
+{
+  "name": "nextjs-i18n-travel-mui",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && node scripts/minify-css.js",
+    "build:no-minify": "next build",
+    "start": "next start",
+    "lint": "eslint . --ext .ts,.tsx || true",
+    "clean": "rm -rf node_modules package-lock.json && npm install",
+    "analyze": "ANALYZE=true npm run build",
+    "minify-css": "node scripts/minify-css.js",
+    "sitemap:static": "node scripts/generate-static-sitemap.js",
+    "sitemap:dynamic": "node scripts/generate-dynamic-sitemaps.js",
+    "sitemap:all": "node scripts/generate-all-sitemaps.js"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.13.1",
+    "@emotion/react": "^11.13.0",
+    "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.5.0",
+    "@mui/material": "^6.5.0",
+    "@mui/x-date-pickers": "^8.11.1",
+    "@mui/x-date-pickers-pro": "^8.11.1",
+    "@types/redis": "^4.0.10",
+    "date-fns": "^4.1.0",
+    "framer-motion": "^12.23.12",
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "recharts": "^3.1.2",
+    "redis": "^5.8.2",
+    "web-vitals": "^5.1.0"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^14.2.5",
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^8.39.1",
+    "@typescript-eslint/parser": "^8.39.1",
+    "css-minimizer-webpack-plugin": "^7.0.2",
+    "csso": "^5.0.5",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.5",
+    "mini-css-extract-plugin": "^2.9.4",
+    "typescript": "^5.5.4"
+  }
+}
