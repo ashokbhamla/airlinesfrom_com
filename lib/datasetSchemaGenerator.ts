@@ -137,7 +137,7 @@ export function generateDatasetSchema({
     "creator": {
       "@type": "Organization",
       "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
-      "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"
+      "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"
     },
     "license": process.env.NEXT_PUBLIC_DATASET_LICENSE || "https://creativecommons.org/licenses/by/4.0/",
     "variableMeasured": [
@@ -180,7 +180,7 @@ export function generateDatasetSchema({
     "creator": {
       "@type": "Organization",
       "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
-      "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"
+      "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"
     },
     "license": process.env.NEXT_PUBLIC_DATASET_LICENSE || "https://creativecommons.org/licenses/by/4.0/",
     "variableMeasured": [
@@ -232,7 +232,7 @@ function generateMonthlyDataItems(
       "creator": {
         "@type": "Organization",
         "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
-        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"
+        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"
       },
       "license": process.env.NEXT_PUBLIC_DATASET_LICENSE || "https://creativecommons.org/licenses/by/4.0/",
       "variableMeasured": [
@@ -278,7 +278,7 @@ function generateWeeklyDataItems(priceData: GraphData[], dayNames: string[]) {
       "creator": {
         "@type": "Organization",
         "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
-        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"
+        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"
       },
       "license": process.env.NEXT_PUBLIC_DATASET_LICENSE || "https://creativecommons.org/licenses/by/4.0/",
       "variableMeasured": [

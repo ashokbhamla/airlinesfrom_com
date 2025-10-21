@@ -95,7 +95,7 @@ Your pages implement **multiple rich schema types**:
 - ✅ Priority and changeFrequency set
 
 #### Minor Issue:
-- ⚠️ All URLs now reference `airlinesfrom.com` (recently fixed ✅)
+- ⚠️ All URLs now reference `airlinefrom.com` (recently fixed ✅)
 
 ---
 
@@ -212,7 +212,7 @@ Clean, SEO-friendly URLs:
 NEXT_PUBLIC_API_BASE=https://api.triposia.com
 NEXT_PUBLIC_API_REAL=https://api.triposia.com
 NEXT_PUBLIC_API_CONTENT=https://api.triposia.com
-NEXT_PUBLIC_DOMAIN=https://airlinesfrom.com
+NEXT_PUBLIC_DOMAIN=https://airlinefrom.com
 ```
 
 **Impact:** 🔴 **SEVERE** - Search engines see empty/placeholder content
@@ -224,15 +224,15 @@ NEXT_PUBLIC_DOMAIN=https://airlinesfrom.com
 
 **Found in Schema.org JSON-LD:**
 ```json
-"url": "https://airlinesfrom.com" ✅
+"url": "https://airlinefrom.com" ✅
 "sameAs": ["https://facebook.com/airlinesfrom"] ⚠️ (verify exists)
-"email": "support@airlinesfrom.com" ⚠️ (verify exists)
+"email": "support@airlinefrom.com" ⚠️ (verify exists)
 ```
 
 **Action Required:**
-1. Verify `support@airlinesfrom.com` email is active
+1. Verify `support@airlinefrom.com` email is active
 2. Verify social media accounts exist or update to real ones
-3. Set up DNS/domain properly for `airlinesfrom.com`
+3. Set up DNS/domain properly for `airlinefrom.com`
 
 **Impact:** 🟠 **MEDIUM** - Broken contact info hurts user trust
 **Priority:** Fix within 1 week
@@ -447,7 +447,7 @@ You have FAQs in content, add FAQPage schema:
    - See: `VERCEL_SETUP_INSTRUCTIONS.md`
 
 2. **Verify Domain DNS**
-   - Ensure `airlinesfrom.com` points to Vercel
+   - Ensure `airlinefrom.com` points to Vercel
    - Set up SSL certificate
    - Test all URLs work
 
@@ -461,7 +461,7 @@ You have FAQs in content, add FAQPage schema:
 ### ⚠️ **HIGH PRIORITY (Fix This Week)**
 
 4. **Set Up Google Search Console**
-   - Add property for `airlinesfrom.com`
+   - Add property for `airlinefrom.com`
    - Submit sitemaps
    - Verify ownership
    - Monitor indexing
@@ -473,7 +473,7 @@ You have FAQs in content, add FAQPage schema:
    - Monitor traffic
 
 6. **Verify Contact Information**
-   - Set up `support@airlinesfrom.com` email
+   - Set up `support@airlinefrom.com` email
    - Create social media accounts or update to real ones
    - Test all contact forms work
 
@@ -562,9 +562,9 @@ You have FAQs in content, add FAQPage schema:
 NEXT_PUBLIC_API_BASE=https://api.triposia.com
 NEXT_PUBLIC_API_REAL=https://api.triposia.com
 NEXT_PUBLIC_API_CONTENT=https://api.triposia.com
-NEXT_PUBLIC_DOMAIN=https://airlinesfrom.com
-NEXT_PUBLIC_COMPANY_NAME=airlinesfrom.com
-NEXT_PUBLIC_COMPANY_EMAIL=support@airlinesfrom.com
+NEXT_PUBLIC_DOMAIN=https://airlinefrom.com
+NEXT_PUBLIC_COMPANY_NAME=airlinefrom.com
+NEXT_PUBLIC_COMPANY_EMAIL=support@airlinefrom.com
 ```
 
 ### Fix 2: Add Google Analytics

@@ -1,4 +1,4 @@
-# robots.txt — airlinesfrom.com (SEO + Chatbot Friendly, Blocks Bad Bots)
+# robots.txt — airlinefrom.com (SEO + Chatbot Friendly, Blocks Bad Bots)
 
 # Default rules for all good bots
 User-agent: *
@@ -89,4 +89,4 @@ User-agent: Yandex
 Crawl-delay: 5
 
 # Sitemap
-Sitemap: https://airlinesfrom.com/sitemap.xml
+Sitemap: https://airlinefrom.com/sitemap.xml

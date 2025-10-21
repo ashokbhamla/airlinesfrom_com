@@ -43,12 +43,12 @@ print_status "Setting environment variables for Cloud Run service..."
 gcloud run services update $SERVICE_NAME \
     --region=$REGION \
     --project=$PROJECT_ID \
-    --update-env-vars="NEXT_PUBLIC_DOMAIN=https://airlinesfrom.com" \
-    --update-env-vars="NEXT_PUBLIC_COMPANY_NAME=airlinesfrom.com" \
-    --update-env-vars="NEXT_PUBLIC_COMPANY_EMAIL=support@airlinesfrom.com" \
+    --update-env-vars="NEXT_PUBLIC_DOMAIN=https://airlinefrom.com" \
+    --update-env-vars="NEXT_PUBLIC_COMPANY_NAME=airlinefrom.com" \
+    --update-env-vars="NEXT_PUBLIC_COMPANY_EMAIL=support@airlinefrom.com" \
     --update-env-vars="NEXT_PUBLIC_COMPANY_PHONE=+1-888-319-6206" \
     --update-env-vars="NEXT_PUBLIC_COMPANY_ADDRESS=8th the green suite b, Dover, DE 19901, US" \
-    --update-env-vars="NEXT_PUBLIC_COMPANY_LOGO=https://airlinesfrom.com/logo.png" \
+    --update-env-vars="NEXT_PUBLIC_COMPANY_LOGO=https://airlinefrom.com/logo.png" \
     --update-env-vars="NEXT_PUBLIC_API_CONTENT=https://api.triposia.com" \
     --update-env-vars="NEXT_PUBLIC_API_REAL=https://api.triposia.com" \
     --update-env-vars="NEXT_PUBLIC_HEADER_TITLE=AirlinesFrom" \
@@ -76,7 +76,7 @@ gcloud run services update $SERVICE_NAME \
     --update-env-vars="NEXT_PUBLIC_YOUTUBE_URL=https://youtube.com/airlinesfrom" \
     --update-env-vars="NEXT_PUBLIC_POPUP_PHONE_NUMBER=+1-888-319-6206" \
     --update-env-vars="NEXT_PUBLIC_POPUP_PROMO_CODE=SAVE30" \
-    --update-env-vars="NEXT_PUBLIC_POPUP_EMAIL=deals@airlinesfrom.com" \
+    --update-env-vars="NEXT_PUBLIC_POPUP_EMAIL=deals@airlinefrom.com" \
     --update-env-vars="NEXT_PUBLIC_CDN_BASE=https://storage.googleapis.com/web-unified-atom-469911-j9" \
     --update-env-vars="NEXT_PUBLIC_CDN_IMAGES=https://storage.googleapis.com/web-unified-atom-469911-j9/images" \
     --update-env-vars="NEXT_PUBLIC_CDN_ICONS=https://storage.googleapis.com/web-unified-atom-469911-j9/icons" \
@@ -100,8 +100,8 @@ gcloud run services update $SERVICE_NAME \
     --update-env-vars="NEXT_PUBLIC_SITE_DESCRIPTION=Find the best flight deals, hotels, and travel packages" \
     --update-env-vars="NEXT_PUBLIC_SITE_KEYWORDS=flights, hotels, travel, booking, airlines, deals, cheap flights" \
     --update-env-vars="NEXT_PUBLIC_SITE_AUTHOR=AirlinesFrom Team" \
-    --update-env-vars="NEXT_PUBLIC_SITE_URL=https://airlinesfrom.com" \
-    --update-env-vars="NEXT_PUBLIC_SITE_IMAGE=https://airlinesfrom.com/og-image.jpg" \
+    --update-env-vars="NEXT_PUBLIC_SITE_URL=https://airlinefrom.com" \
+    --update-env-vars="NEXT_PUBLIC_SITE_IMAGE=https://airlinefrom.com/og-image.jpg" \
     --update-env-vars="NEXT_PUBLIC_FEATURE_BOOKING_ENABLED=true" \
     --update-env-vars="NEXT_PUBLIC_FEATURE_HOTELS_ENABLED=true" \
     --update-env-vars="NEXT_PUBLIC_FEATURE_CARS_ENABLED=false" \
@@ -117,8 +117,8 @@ else
 fi
 
 print_status "Environment variables configured:"
-echo "  - NEXT_PUBLIC_DOMAIN=https://airlinesfrom.com"
-echo "  - NEXT_PUBLIC_COMPANY_NAME=airlinesfrom.com"
+echo "  - NEXT_PUBLIC_DOMAIN=https://airlinefrom.com"
+echo "  - NEXT_PUBLIC_COMPANY_NAME=airlinefrom.com"
 echo "  - NEXT_PUBLIC_API_CONTENT=https://api.triposia.com"
 echo "  - NEXT_PUBLIC_API_REAL=https://api.triposia.com"
 echo "  - And 40+ additional configuration variables"

@@ -9,7 +9,7 @@ export class SitemapGenerator {
   private baseUrl: string
   private currentDate: string
 
-  constructor(baseUrl: string = 'https://airlinesfrom.com') {
+  constructor(baseUrl: string = 'https://airlinefrom.com') {
     this.baseUrl = baseUrl
     this.currentDate = new Date().toISOString()
   }

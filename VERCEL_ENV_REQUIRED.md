@@ -13,8 +13,8 @@ NEXT_PUBLIC_API_CONTENT=https://api.triposia.com
 
 ### 2. Domain Configuration
 ```
-NEXT_PUBLIC_DOMAIN=https://airlinesfrom.com
-NEXT_PUBLIC_COMPANY_NAME=airlinesfrom.com
+NEXT_PUBLIC_DOMAIN=https://airlinefrom.com
+NEXT_PUBLIC_COMPANY_NAME=airlinefrom.com
 ```
 
 ### 3. Redis Configuration (Upstash)

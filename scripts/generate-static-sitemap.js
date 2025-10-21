@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Configuration
-const BASE_URL = 'https://airlinesfrom.com';
+const BASE_URL = 'https://airlinefrom.com';
 const LOCALES = ['en', 'es', 'ru', 'fr'];
 const OUTPUT_DIR = './public';
 const OUTPUT_FILE = 'sitemap.xml';

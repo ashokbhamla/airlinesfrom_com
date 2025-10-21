@@ -1453,7 +1453,7 @@ const FlightTemplate = memo(function FlightTemplate({
       {/* JSON-LD Schemas */}
       {(() => {
         const currentYear = new Date().getFullYear();
-        const pageUrl = `${process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com'}/${locale === 'en' ? '' : locale + '/'}flights/${params.slug}`;
+        const pageUrl = `${process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com'}/${locale === 'en' ? '' : locale + '/'}flights/${params.slug}`;
         
         // Prepare FAQ data for schema
         const faqData = pageData?.faqs || [];
@@ -1779,14 +1779,14 @@ const FlightTemplate = memo(function FlightTemplate({
                 "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/logo.png`
+                  "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"}/logo.png`
                 }
               },
               "datePublished": new Date().toISOString(),
               "dateModified": new Date().toISOString(),
               "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/flights/${departureIata}${arrivalIata ? `-${arrivalIata}` : ''}`
+                "@id": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"}/flights/${departureIata}${arrivalIata ? `-${arrivalIata}` : ''}`
               },
               "about": {
                 "@type": "Place",
@@ -1839,7 +1839,7 @@ const FlightTemplate = memo(function FlightTemplate({
               "@type": "Dataset",
               "name": `Flight Price Data - ${departureCity} to ${arrivalCity}`,
               "description": `Historical price data for flights from ${departureCity} to ${arrivalCity}`,
-              "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/flights/${departureIata}${arrivalIata ? `-${arrivalIata}` : ''}`,
+              "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"}/flights/${departureIata}${arrivalIata ? `-${arrivalIata}` : ''}`,
               "creator": {
                 "@type": "Organization",
                 "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom"
@@ -1874,7 +1874,7 @@ const FlightTemplate = memo(function FlightTemplate({
               "distribution": {
                 "@type": "DataDownload",
                 "encodingFormat": "application/json",
-                "contentUrl": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/api/flight-data?arrival_iata=${arrivalIata}&departure_iata=${departureIata}`
+                "contentUrl": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"}/api/flight-data?arrival_iata=${arrivalIata}&departure_iata=${departureIata}`
               }
             }} />
 
@@ -1884,7 +1884,7 @@ const FlightTemplate = memo(function FlightTemplate({
               "@type": "Place",
               "name": arrivalCity,
               "description": pageData?.city || `Information about ${arrivalCity}`,
-              "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/flights/${departureIata}${arrivalIata ? `-${arrivalIata}` : ''}`,
+              "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"}/flights/${departureIata}${arrivalIata ? `-${arrivalIata}` : ''}`,
               "geo": {
                 "@type": "GeoCoordinates",
                 "latitude": "0.0", // This would need to be fetched from city data
@@ -1902,7 +1902,7 @@ const FlightTemplate = memo(function FlightTemplate({
               "@context": "https://schema.org",
               "@type": "TravelAgency",
               "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
-              "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com",
+              "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com",
               "description": process.env.NEXT_PUBLIC_COMPANY_DESCRIPTION || "Compare airlines and find the best flight deals",
               "address": {
                 "@type": "PostalAddress",
@@ -1913,7 +1913,7 @@ const FlightTemplate = memo(function FlightTemplate({
                 "addressCountry": process.env.NEXT_PUBLIC_COUNTRY || "US"
               },
               "telephone": process.env.NEXT_PUBLIC_PHONE || "+1-302-123-4567",
-              "email": process.env.NEXT_PUBLIC_EMAIL || "info@airlinesfrom.com",
+              "email": process.env.NEXT_PUBLIC_EMAIL || "info@airlinefrom.com",
               "sameAs": [
                 process.env.NEXT_PUBLIC_FACEBOOK || "https://facebook.com/airlinesfrom",
                 process.env.NEXT_PUBLIC_TWITTER || "https://twitter.com/airlinesfrom",
@@ -1930,19 +1930,19 @@ const FlightTemplate = memo(function FlightTemplate({
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"
+                  "item": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Flights",
-                  "item": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/flights`
+                  "item": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"}/flights`
                 },
                 {
                   "@type": "ListItem",
                   "position": 3,
                   "name": `${departureCity} to ${arrivalCity}`,
-                  "item": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/flights/${departureIata}${arrivalIata ? `-${arrivalIata}` : ''}`
+                  "item": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"}/flights/${departureIata}${arrivalIata ? `-${arrivalIata}` : ''}`
                 }
               ]
             }} />
@@ -1953,7 +1953,7 @@ const FlightTemplate = memo(function FlightTemplate({
               "@type": "WebPage",
               "name": pageData?.title || content.title,
               "description": pageData?.description || content.description,
-              "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/flights/${departureIata}${arrivalIata ? `-${arrivalIata}` : ''}`,
+              "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"}/flights/${departureIata}${arrivalIata ? `-${arrivalIata}` : ''}`,
               "mainEntity": {
                 "@type": "Flight",
                 "departureAirport": {
@@ -1974,19 +1974,19 @@ const FlightTemplate = memo(function FlightTemplate({
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Home",
-                    "item": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"
+                    "item": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Flights",
-                    "item": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/flights`
+                    "item": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"}/flights`
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": `${departureCity} to ${arrivalCity}`,
-                    "item": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/flights/${departureIata}${arrivalIata ? `-${arrivalIata}` : ''}`
+                    "item": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"}/flights/${departureIata}${arrivalIata ? `-${arrivalIata}` : ''}`
                   }
                 ]
               }

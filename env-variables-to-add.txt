@@ -1,8 +1,8 @@
 # Add these environment variables to your .env.local file:
 
 # Domain Configuration
-NEXT_PUBLIC_DOMAIN=https://airlinesfrom.com
-NEXT_PUBLIC_COMPANY_NAME=airlinesfrom.com
+NEXT_PUBLIC_DOMAIN=https://airlinefrom.com
+NEXT_PUBLIC_COMPANY_NAME=airlinefrom.com
 
 # Header Configuration
 NEXT_PUBLIC_HEADER_TITLE=AirlinesFrom

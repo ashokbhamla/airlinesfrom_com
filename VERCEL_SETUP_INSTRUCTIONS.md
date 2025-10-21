@@ -25,9 +25,9 @@ NEXT_PUBLIC_API_CONTENT=https://api.triposia.com
 
 ### 2. Domain Configuration
 ```env
-NEXT_PUBLIC_DOMAIN=https://airlinesfrom.com
-NEXT_PUBLIC_COMPANY_NAME=airlinesfrom.com
-NEXT_PUBLIC_COMPANY_EMAIL=support@airlinesfrom.com
+NEXT_PUBLIC_DOMAIN=https://airlinefrom.com
+NEXT_PUBLIC_COMPANY_NAME=airlinefrom.com
+NEXT_PUBLIC_COMPANY_EMAIL=support@airlinefrom.com
 NEXT_PUBLIC_COMPANY_PHONE=+1-888-319-6206
 ```
 
@@ -36,7 +36,7 @@ NEXT_PUBLIC_COMPANY_PHONE=+1-888-319-6206
 NEXT_PUBLIC_HEADER_TITLE=AirlinesFrom
 NEXT_PUBLIC_SITE_NAME=AirlinesFrom
 NEXT_PUBLIC_SITE_AUTHOR=AirlinesFrom Team
-NEXT_PUBLIC_SITE_URL=https://airlinesfrom.com
+NEXT_PUBLIC_SITE_URL=https://airlinefrom.com
 ```
 
 ### 4. Social Media

@@ -131,7 +131,7 @@ CUSTOM_CRM_PASSWORD=your_crm_password
 ### Production Testing:
 1. Add variables to Vercel Environment Variables
 2. Deploy your changes
-3. Test on production: `https://airlinesfrom.com/en/search#/flights/JFK2310LHR241011`
+3. Test on production: `https://airlinefrom.com/en/search#/flights/JFK2310LHR241011`
 4. Check Vercel Function Logs for confirmation
 
 ## Step 5: Add to Vercel

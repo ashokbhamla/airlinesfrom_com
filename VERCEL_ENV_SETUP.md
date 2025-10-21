@@ -53,7 +53,7 @@ vercel --prod
 ## Step 4: Test the Integration
 
 ### Option 1: Test via UI
-1. Visit: `https://airlinesfrom.com/en/search#/flights/JFK2310LHR241011`
+1. Visit: `https://airlinefrom.com/en/search#/flights/JFK2310LHR241011`
 2. Click on search results
 3. Fill booking form
 4. Submit
@@ -61,7 +61,7 @@ vercel --prod
 
 ### Option 2: Test via API
 ```bash
-curl -X POST https://airlinesfrom.com/api/bookings \
+curl -X POST https://airlinefrom.com/api/bookings \
   -H "Content-Type: application/json" \
   -d '{
     "customerName": "Test Customer",
@@ -99,9 +99,9 @@ REDIS_TOKEN=your_redis_token
 
 ### API Endpoints (Already Configured)
 ```env
-NEXT_PUBLIC_API_BASE=https://node.airlinesfrom.com
-NEXT_PUBLIC_API_REAL=https://node.airlinesfrom.com
-NEXT_PUBLIC_DOMAIN=airlinesfrom.com
+NEXT_PUBLIC_API_BASE=https://node.airlinefrom.com
+NEXT_PUBLIC_API_REAL=https://node.airlinefrom.com
+NEXT_PUBLIC_DOMAIN=airlinefrom.com
 ```
 
 ---

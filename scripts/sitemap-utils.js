@@ -14,7 +14,7 @@
 const https = require('https');
 const http = require('http');
 
-const BASE_URL = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com';
+const BASE_URL = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com';
 const LOCAL_URL = 'http://localhost:3000';
 
 function makeRequest(url) {

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AirlinesFrom - Find Flights',
     description: 'Helps you find the cheapest flight deals to any destination with ease.',
-    url: 'https://airlinesfrom.com',
+    url: 'https://airlinefrom.com',
     siteName: 'AirlinesFrom',
     locale: 'en_US',
     type: 'website',

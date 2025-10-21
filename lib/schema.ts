@@ -1,9 +1,9 @@
 type Json = Record<string, any>;
 
 export function orgSchema(header: any): Json | null {
-  const companyName = process.env.NEXT_PUBLIC_COMPANY_NAME || 'airlinesfrom.com';
-  const companyUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com';
-  const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL || 'support@airlinesfrom.com';
+  const companyName = process.env.NEXT_PUBLIC_COMPANY_NAME || 'airlinefrom.com';
+  const companyUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com';
+  const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL || 'support@airlinefrom.com';
   const companyPhone = process.env.NEXT_PUBLIC_COMPANY_PHONE || '+1-888-319-6206';
   const companyAddress = process.env.NEXT_PUBLIC_COMPANY_ADDRESS || '8th the green suite b, Dover, DE 19901, US';
   const companyLogo = process.env.NEXT_PUBLIC_COMPANY_LOGO || `${companyUrl}/logo.png`;
@@ -33,8 +33,8 @@ export function orgSchema(header: any): Json | null {
 }
 
 export function websiteSchema(header: any): Json {
-  const companyName = process.env.NEXT_PUBLIC_COMPANY_NAME || 'airlinesfrom.com';
-  const companyUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com';
+  const companyName = process.env.NEXT_PUBLIC_COMPANY_NAME || 'airlinefrom.com';
+  const companyUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com';
   
   return {
     '@context': 'https://schema.org',
@@ -50,9 +50,9 @@ export function websiteSchema(header: any): Json {
 }
 
 export function localBusinessSchema(): Json {
-  const companyName = process.env.NEXT_PUBLIC_COMPANY_NAME || 'airlinesfrom.com';
-  const companyUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com';
-  const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL || 'support@airlinesfrom.com';
+  const companyName = process.env.NEXT_PUBLIC_COMPANY_NAME || 'airlinefrom.com';
+  const companyUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com';
+  const companyEmail = process.env.NEXT_PUBLIC_COMPANY_EMAIL || 'support@airlinefrom.com';
   const companyPhone = process.env.NEXT_PUBLIC_COMPANY_PHONE || '+1-888-319-6206';
   
   return {

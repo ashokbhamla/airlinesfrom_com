@@ -124,8 +124,8 @@ const customSitemap = generator.generateCompleteSitemap({
 
 ### Monitoring
 
-- Check sitemap accessibility: `https://airlinesfrom.com/sitemap.xml`
-- Verify robots.txt: `https://airlinesfrom.com/robots.txt`
+- Check sitemap accessibility: `https://airlinefrom.com/sitemap.xml`
+- Verify robots.txt: `https://airlinefrom.com/robots.txt`
 - Monitor search console for indexing issues
 
 ### Testing
@@ -158,10 +158,10 @@ The sitemap index (`/sitemap-index.xml`) can be used to:
 For better international SEO, consider adding hreflang tags to indicate language alternatives:
 
 ```xml
-<link rel="alternate" hreflang="en" href="https://airlinesfrom.com/" />
-<link rel="alternate" hreflang="es" href="https://airlinesfrom.com/es/" />
-<link rel="alternate" hreflang="ru" href="https://airlinesfrom.com/ru/" />
-<link rel="alternate" hreflang="fr" href="https://airlinesfrom.com/fr/" />
+<link rel="alternate" hreflang="en" href="https://airlinefrom.com/" />
+<link rel="alternate" hreflang="es" href="https://airlinefrom.com/es/" />
+<link rel="alternate" hreflang="ru" href="https://airlinefrom.com/ru/" />
+<link rel="alternate" hreflang="fr" href="https://airlinefrom.com/fr/" />
 ```
 
 ## Troubleshooting
