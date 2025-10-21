@@ -24,7 +24,7 @@ async function fetchAirlineContent(slug: string, langId: 1 | 2) {
     const airlineCode = getAirlineCodeFromSlug(slug);
     
     const response = await fetch(
-      `https://api.triposia.com/content/airlines?airline_code=${airlineCode}&departure_iata=&lang=${langId}`,
+      `https://api.triposia.com/content/airlines?airline_code=${airlineCode}&departure_iata=&lang_id=${langId}&domain_id=1`,
       { 
         next: { revalidate: 300 },
         headers: {
