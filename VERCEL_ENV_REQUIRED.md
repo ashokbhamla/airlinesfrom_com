@@ -8,12 +8,13 @@ Add these in Vercel Dashboard → Settings → Environment Variables:
 ```
 NEXT_PUBLIC_API_BASE=https://api.triposia.com
 NEXT_PUBLIC_API_REAL=https://api.triposia.com
+NEXT_PUBLIC_API_CONTENT=https://api.triposia.com
 ```
 
 ### 2. Domain Configuration
 ```
-NEXT_PUBLIC_DOMAIN=airlinesmap.com
-NEXT_PUBLIC_COMPANY_NAME=AirlinesMap
+NEXT_PUBLIC_DOMAIN=https://airlinesfrom.com
+NEXT_PUBLIC_COMPANY_NAME=airlinesfrom.com
 ```
 
 ### 3. Redis Configuration (Upstash)
