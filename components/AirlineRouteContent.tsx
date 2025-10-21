@@ -117,9 +117,10 @@ export default function AirlineRouteContent({
         maxWidth: '100%'
       }}
     >
-      {/* Main Title */}
+      {/* Main Title - Changed to h2 to avoid multiple H1 tags */}
       <Typography 
-        variant="h1" 
+        component="h1"
+        variant="h2" 
         sx={{ 
           fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' },
           fontWeight: 700,
@@ -162,6 +163,14 @@ export default function AirlineRouteContent({
             sx={{ 
               color: '#4a5568',
               lineHeight: 1.7,
+              '& h1': {
+                fontSize: '1.5rem',
+                fontWeight: 600,
+                color: '#1a1a1a',
+                mb: 2,
+                mt: 3,
+                display: 'block'
+              },
               '& h3, & h4, & h5, & h6': {
                 color: '#1a1a1a',
                 fontWeight: 600,
@@ -203,6 +212,14 @@ export default function AirlineRouteContent({
             sx={{ 
               color: '#4a5568',
               lineHeight: 1.7,
+              '& h1': {
+                fontSize: '1.5rem',
+                fontWeight: 600,
+                color: '#1a1a1a',
+                mb: 2,
+                mt: 3,
+                display: 'block'
+              },
               '& h3, & h4, & h5, & h6': {
                 color: '#1a1a1a',
                 fontWeight: 600,
@@ -244,6 +261,14 @@ export default function AirlineRouteContent({
             sx={{ 
               color: '#4a5568',
               lineHeight: 1.7,
+              '& h1': {
+                fontSize: '1.5rem',
+                fontWeight: 600,
+                color: '#1a1a1a',
+                mb: 2,
+                mt: 3,
+                display: 'block'
+              },
               '& h3, & h4, & h5, & h6': {
                 color: '#1a1a1a',
                 fontWeight: 600,
@@ -285,6 +310,14 @@ export default function AirlineRouteContent({
             sx={{ 
               color: '#4a5568',
               lineHeight: 1.7,
+              '& h1': {
+                fontSize: '1.5rem',
+                fontWeight: 600,
+                color: '#1a1a1a',
+                mb: 2,
+                mt: 3,
+                display: 'block'
+              },
               '& h3, & h4, & h5, & h6': {
                 color: '#1a1a1a',
                 fontWeight: 600,

@@ -157,6 +157,7 @@ export function useMultiLanguageContent({
 
 /**
  * Hook for handling HTML content with translations
+ * Strips H1 tags to prevent multiple H1 tags on the page (SEO best practice)
  */
 export function useHtmlTranslation({
   locale,
@@ -176,8 +177,13 @@ export function useHtmlTranslation({
     defaultText: defaultHtml
   });
   
+  // Strip H1 tags and convert them to H2 to avoid multiple H1 tags (SEO issue)
+  const sanitizedContent = translatedContent
+    .replace(/<h1([^>]*)>/gi, '<h2$1>')
+    .replace(/<\/h1>/gi, '</h2>');
+  
   return {
-    __html: translatedContent
+    __html: sanitizedContent
   };
 }
 

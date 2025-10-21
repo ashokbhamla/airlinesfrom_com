@@ -396,7 +396,7 @@ export async function generateMetadata({ params }: { params: { locale: string; a
     const t = getTranslations(locale);
     
     // Use dynamic data from content API for title and description
-    const title = contentData?.title || (arrivalIata ? 
+    const rawTitle = contentData?.title || (arrivalIata ? 
       t.flightPage.title
         .replace('{airlineName}', getAirlineName(airlineCode, contentData, airlineContactInfo))
         .replace('{departureCity}', flightData?.metadata?.departure_city || contentData?.departure_city || getCityName(departureIata))
@@ -405,6 +405,9 @@ export async function generateMetadata({ params }: { params: { locale: string; a
         .replace('{airlineName}', getAirlineName(airlineCode, contentData, airlineContactInfo))
         .replace('{departureCity}', flightData?.metadata?.departure_city || contentData?.departure_city || getCityName(departureIata))
         .replace('{arrivalCity}', t.flightPage.destinationsWorldwide));
+    
+    // Limit title to 45 characters to accommodate phone number suffix (total ~70 chars)
+    const title = rawTitle.length > 45 ? rawTitle.substring(0, 45) + '...' : rawTitle;
 
     // Use dynamic data from content API for description
     const description = contentData?.meta_description || (arrivalIata ?
