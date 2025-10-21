@@ -1,0 +1,19 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "AirlineFrom Flight Search",
+  "name_for_model": "airlinefrom",
+  "description_for_human": "Search and compare flights from multiple airlines. Find the best deals on flights, hotels, and travel packages.",
+  "description_for_model": "Plugin for searching flight prices, airline routes, and travel information. Use this when users ask about flight prices, airline schedules, best time to book flights, or travel between cities. Provides real-time pricing data, route availability, and travel recommendations.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://airlinefrom.com/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://airlinefrom.com/logo.png",
+  "contact_email": "support@airlinefrom.com",
+  "legal_info_url": "https://airlinefrom.com/terms-and-conditions"
+}
+

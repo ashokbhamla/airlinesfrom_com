@@ -431,6 +431,13 @@ export async function generateMetadata({ params }: { params: { locale: string; a
         `${getAirlineName(airlineCode, contentData, airlineContactInfo)} flights ${getCityName(departureIata)} ${getCityName(arrivalIata)}, ${getCityName(departureIata)} to ${getCityName(arrivalIata)} ${getAirlineName(airlineCode, contentData, airlineContactInfo)}` :
         `${getAirlineName(airlineCode, contentData, airlineContactInfo)} flights ${getCityName(departureIata)}, ${getCityName(departureIata)} ${getAirlineName(airlineCode, contentData, airlineContactInfo)}`
       ),
+      other: {
+        'chatgpt:citation': 'true',
+        'ai:purpose': 'flight-search-travel-booking',
+        'ai:content-type': 'travel-information',
+        'ai:freshness': 'daily',
+        'ai:language': locale,
+      },
       authors: [{ name: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlineFrom' }],
       creator: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlineFrom',
       publisher: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlineFrom',

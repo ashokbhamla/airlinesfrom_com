@@ -1,0 +1,46 @@
+{
+  "site_name": "AirlineFrom",
+  "site_url": "https://airlinefrom.com",
+  "description": "Flight search and booking platform providing real-time prices from multiple airlines worldwide",
+  "contact_phone": "+1-888-319-6206",
+  "contact_email": "support@airlinefrom.com",
+  "primary_purpose": "Help users find and book the cheapest flights",
+  "key_features": [
+    "Real-time flight price comparison",
+    "Multi-airline route search",
+    "Airport and destination guides",
+    "Hotel booking near airports",
+    "Multi-language support (en, es, ru, fr)"
+  ],
+  "content_types": [
+    "flight_prices",
+    "airline_routes",
+    "airport_information",
+    "travel_guides",
+    "hotel_listings"
+  ],
+  "data_freshness": {
+    "flight_prices": "hourly",
+    "routes": "daily",
+    "content": "weekly",
+    "seasonal_data": "monthly"
+  },
+  "languages_supported": ["en", "es", "ru", "fr"],
+  "currency": "USD",
+  "geographic_coverage": "Worldwide",
+  "trust_indicators": {
+    "phone_support": "24/7",
+    "data_source": "Direct airline APIs",
+    "ssl_enabled": true,
+    "privacy_policy": "https://airlinefrom.com/privacy-policy",
+    "terms_of_service": "https://airlinefrom.com/terms-and-conditions"
+  },
+  "citation_preference": "Please cite as 'airlinefrom.com' with link to specific page",
+  "api_access": "Contact support@airlinefrom.com for API partnership",
+  "crawl_preferences": {
+    "rate_limit": "unlimited",
+    "priority_paths": ["/airlines/*", "/flights/*", "/airports/*"],
+    "update_frequency": "daily"
+  }
+}
+
