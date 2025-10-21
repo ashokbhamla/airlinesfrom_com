@@ -9,7 +9,7 @@ Add these to your Vercel project settings to enable secure CRM integration.
 ## Step 1: Go to Vercel Dashboard
 
 1. Visit: https://vercel.com/dashboard
-2. Select your project: `airlinesmap`
+2. Select your project: `airlinesfrom`
 3. Go to: **Settings** → **Environment Variables**
 
 ---
@@ -53,7 +53,7 @@ vercel --prod
 ## Step 4: Test the Integration
 
 ### Option 1: Test via UI
-1. Visit: `https://airlinesmap.com/en/search#/flights/JFK2310LHR241011`
+1. Visit: `https://airlinesfrom.com/en/search#/flights/JFK2310LHR241011`
 2. Click on search results
 3. Fill booking form
 4. Submit
@@ -61,7 +61,7 @@ vercel --prod
 
 ### Option 2: Test via API
 ```bash
-curl -X POST https://airlinesmap.com/api/bookings \
+curl -X POST https://airlinesfrom.com/api/bookings \
   -H "Content-Type: application/json" \
   -d '{
     "customerName": "Test Customer",
@@ -99,9 +99,9 @@ REDIS_TOKEN=your_redis_token
 
 ### API Endpoints (Already Configured)
 ```env
-NEXT_PUBLIC_API_BASE=https://node.airlinesmap.com
-NEXT_PUBLIC_API_REAL=https://node.airlinesmap.com
-NEXT_PUBLIC_DOMAIN=airlinesmap.com
+NEXT_PUBLIC_API_BASE=https://node.airlinesfrom.com
+NEXT_PUBLIC_API_REAL=https://node.airlinesfrom.com
+NEXT_PUBLIC_DOMAIN=airlinesfrom.com
 ```
 
 ---

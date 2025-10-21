@@ -137,7 +137,7 @@ function transformDataForCRM(bookingData: BookingData) {
     returnDate: formatDateForCRM(bookingData.flightDetails.returnDate),
     tripType: bookingData.flightDetails.tripType?.toLowerCase() === 'one-way' ? 'oneway' : 'roundtrip',
     numberOfPassengers: bookingData.flightDetails.travelers || 1,
-    source: 'landing', // Source from airlinesmap search page
+    source: 'landing', // Source from airlinesfrom search page
     notes: `Flight: ${bookingData.flightDetails.fromCity || bookingData.flightDetails.from} to ${bookingData.flightDetails.toCity || bookingData.flightDetails.to}${bookingData.flightDetails.price ? `. Estimated Price: $${bookingData.flightDetails.price}` : ''}. Class: ${bookingData.flightDetails.class || 'Economy'}. Submitted from AirlinesFrom search page.`,
   };
 

@@ -7,8 +7,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   
   return {
     title: {
-      template: `%s | ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'} - Compare Airlines & Find Best Deals`,
-      default: `Airlines - Compare US Airlines & Find Best Flight Deals | ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'}`
+      template: `%s | ☎ 𝟖𝟖𝟖-𝟑𝟏𝟗-𝟔𝟐𝟎𝟔`,
+      default: `Airlines - Compare US Airlines & Find Best Flight Deals | ☎ 𝟖𝟖𝟖-𝟑𝟏𝟗-𝟔𝟐𝟎𝟔`
     },
     description: 'Compare major US airlines including American Airlines, Delta, United, Southwest, and more. Find the best flight deals, routes, and airline information for domestic and international travel.',
     keywords: [

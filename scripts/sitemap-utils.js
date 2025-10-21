@@ -74,10 +74,10 @@ async function countUrls() {
     console.log(`📈 Total URLs: ${urlCount}`);
     
     // Count by type
-    const homePages = (response.data.match(/<loc>https:\/\/airlinesmap\.com<\/loc>/g) || []).length;
-    const airlinePages = (response.data.match(/<loc>https:\/\/airlinesmap\.com\/airlines\//g) || []).length;
-    const flightPages = (response.data.match(/<loc>https:\/\/airlinesmap\.com\/flights\//g) || []).length;
-    const languagePages = (response.data.match(/<loc>https:\/\/airlinesmap\.com\/[a-z]{2}\//g) || []).length;
+    const homePages = (response.data.match(/<loc>https:\/\/airlinesfrom\.com<\/loc>/g) || []).length;
+    const airlinePages = (response.data.match(/<loc>https:\/\/airlinesfrom\.com\/airlines\//g) || []).length;
+    const flightPages = (response.data.match(/<loc>https:\/\/airlinesfrom\.com\/flights\//g) || []).length;
+    const languagePages = (response.data.match(/<loc>https:\/\/airlinesfrom\.com\/[a-z]{2}\//g) || []).length;
     
     console.log(`🏠 Home pages: ${homePages}`);
     console.log(`✈️  Airline pages: ${airlinePages}`);

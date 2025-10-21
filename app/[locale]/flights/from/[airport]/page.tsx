@@ -818,11 +818,11 @@ export default async function FlightDestinationPage({ params }: { params: { loca
         "@type": "WebPage",
         "name": contentData?.title || `Flights from ${cityName} (${airportCode})`,
         "description": contentData?.description || `Find cheap flights from ${cityName} to destinations worldwide.`,
-        "url": `${process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesmap.com'}/flights/${params.airport}`,
+        "url": `${process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com'}/flights/${params.airport}`,
         "isPartOf": {
           "@type": "WebSite",
-          "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "airlinesmap.com",
-          "url": process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesmap.com'
+          "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "airlinesfrom.com",
+          "url": process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com'
         },
         "mainEntity": {
           "@type": "Airport",
@@ -844,12 +844,12 @@ export default async function FlightDestinationPage({ params }: { params: { loca
           "name": `Flights from ${cityName}`,
           "description": contentData?.description || `Find cheap flights from ${cityName} to destinations worldwide`,
           "image": [
-            `${process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesmap.com'}/images/airports/${airportCode}.jpg`,
-            `${process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesmap.com'}/images/flights/generic-flight.jpg`
+            `${process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com'}/images/airports/${airportCode}.jpg`,
+            `${process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com'}/images/flights/generic-flight.jpg`
           ],
           "brand": {
             "@type": "Brand",
-            "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "airlinesmap.com"
+            "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "airlinesfrom.com"
           },
           "aggregateRating": {
             "@type": "AggregateRating",
@@ -983,10 +983,10 @@ export default async function FlightDestinationPage({ params }: { params: { loca
       <SchemaOrg data={{
         "@context": "https://schema.org",
         "@type": "TravelAgency",
-        "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "airlinesmap.com",
+        "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "airlinesfrom.com",
         "description": "Find cheap flights, hotels, and travel deals",
-        "url": process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesmap.com',
-        "logo": `${process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesmap.com'}${process.env.NEXT_PUBLIC_LOGO_URL || "/logo.png"}`,
+        "url": process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com',
+        "logo": `${process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com'}${process.env.NEXT_PUBLIC_LOGO_URL || "/logo.png"}`,
         "address": {
           "@type": "PostalAddress",
           "addressCountry": "US"

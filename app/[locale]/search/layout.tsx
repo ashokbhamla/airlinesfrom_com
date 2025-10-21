@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: {
-      template: `%s | ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'}`,
-      default: `Search Flights | ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'}`,
+      template: `%s | ☎ 𝟖𝟖𝟖-𝟑𝟏𝟗-𝟔𝟐𝟎𝟔`,
+      default: `Search Flights | ☎ 𝟖𝟖𝟖-𝟑𝟏𝟗-𝟔𝟐𝟎𝟔`,
     },
   description: 'Search and compare flights from multiple airlines to find the best deals.',
   keywords: 'flight search, compare flights, airline tickets, travel deals, flight booking',

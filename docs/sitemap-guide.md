@@ -1,8 +1,8 @@
-# Sitemap Guide for AirlinesMap
+# Sitemap Guide for AirlinesFrom
 
 ## Overview
 
-This guide explains how the sitemap system works for the AirlinesMap website and how to maintain it.
+This guide explains how the sitemap system works for the AirlinesFrom website and how to maintain it.
 
 ## Files Structure
 
@@ -124,8 +124,8 @@ const customSitemap = generator.generateCompleteSitemap({
 
 ### Monitoring
 
-- Check sitemap accessibility: `https://airlinesmap.com/sitemap.xml`
-- Verify robots.txt: `https://airlinesmap.com/robots.txt`
+- Check sitemap accessibility: `https://airlinesfrom.com/sitemap.xml`
+- Verify robots.txt: `https://airlinesfrom.com/robots.txt`
 - Monitor search console for indexing issues
 
 ### Testing
@@ -158,10 +158,10 @@ The sitemap index (`/sitemap-index.xml`) can be used to:
 For better international SEO, consider adding hreflang tags to indicate language alternatives:
 
 ```xml
-<link rel="alternate" hreflang="en" href="https://airlinesmap.com/" />
-<link rel="alternate" hreflang="es" href="https://airlinesmap.com/es/" />
-<link rel="alternate" hreflang="ru" href="https://airlinesmap.com/ru/" />
-<link rel="alternate" hreflang="fr" href="https://airlinesmap.com/fr/" />
+<link rel="alternate" hreflang="en" href="https://airlinesfrom.com/" />
+<link rel="alternate" hreflang="es" href="https://airlinesfrom.com/es/" />
+<link rel="alternate" hreflang="ru" href="https://airlinesfrom.com/ru/" />
+<link rel="alternate" hreflang="fr" href="https://airlinesfrom.com/fr/" />
 ```
 
 ## Troubleshooting

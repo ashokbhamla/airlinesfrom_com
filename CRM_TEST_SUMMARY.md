@@ -127,7 +127,7 @@ Changes are already committed and pushed. Wait for Vercel deployment to complete
 
 ### Step 2: Visit Search Page
 ```
-https://airlinesmap.com/en/search#/flights/JFK2310LHR241011
+https://airlinesfrom.com/en/search#/flights/JFK2310LHR241011
 ```
 
 ### Step 3: Open Booking Popup
@@ -180,7 +180,7 @@ New leads should appear with:
 ### Check Integration Status:
 ```bash
 # Test the booking API
-curl -X POST https://airlinesmap.com/api/bookings \
+curl -X POST https://airlinesfrom.com/api/bookings \
   -H "Content-Type: application/json" \
   -d '{
     "customerName":"Test User",

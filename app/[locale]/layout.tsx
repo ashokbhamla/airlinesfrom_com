@@ -44,8 +44,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   return {
     metadataBase: new URL(baseUrl),
     title: {
-      default: `${companyName} - ${translations.common.findFlights}`,
-      template: `%s | ${companyName}`
+      default: `${companyName} - ${translations.common.findFlights} | ☎ 𝟖𝟖𝟖-𝟑𝟏𝟗-𝟔𝟐𝟎𝟔`,
+      template: `%s | ☎ 𝟖𝟖𝟖-𝟑𝟏𝟗-𝟔𝟐𝟎𝟔`
     },
     description: translations.footer.description1,
     keywords: ['flights', 'hotels', 'travel', 'booking'],

@@ -483,8 +483,8 @@ export async function generateMetadata({ params }: { params: { locale: string; a
         card: 'summary_large_image',
         title,
         description,
-        site: '@airlinesmap',
-        creator: '@airlinesmap',
+        site: '@airlinesfrom',
+        creator: '@airlinesfrom',
         images: [
           getAirlineLogoUrl(airlineCode, 'large'),
           ...(arrivalIata ? [
@@ -574,8 +574,8 @@ export async function generateMetadata({ params }: { params: { locale: string; a
         card: 'summary_large_image',
         title,
         description,
-        site: '@airlinesmap',
-        creator: '@airlinesmap',
+        site: '@airlinesfrom',
+        creator: '@airlinesfrom',
         images: [
           getAirlineLogoUrl(airlineCode, 'large'),
           ...(arrivalIata ? [
@@ -2332,17 +2332,17 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
-        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com",
-        "logo": process.env.NEXT_PUBLIC_COMPANY_LOGO || "https://airlinesmap.com/logo.png",
+        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com",
+        "logo": process.env.NEXT_PUBLIC_COMPANY_LOGO || "https://airlinesfrom.com/logo.png",
         "description": process.env.NEXT_PUBLIC_COMPANY_DESCRIPTION || "Find the best flight deals, hotels, and travel packages",
         "foundingDate": process.env.NEXT_PUBLIC_COMPANY_FOUNDING_DATE || "2018",
         "telephone": process.env.NEXT_PUBLIC_PHONE || "+1-888-319-6206",
-        "email": process.env.NEXT_PUBLIC_EMAIL || "support@airlinesmap.com",
+        "email": process.env.NEXT_PUBLIC_EMAIL || "support@airlinesfrom.com",
         "sameAs": [
-          process.env.NEXT_PUBLIC_FACEBOOK_URL || "https://facebook.com/airlinesmap",
-          process.env.NEXT_PUBLIC_TWITTER_URL || "https://twitter.com/airlinesmap",
-          process.env.NEXT_PUBLIC_INSTAGRAM_URL || "https://instagram.com/airlinesmap",
-          process.env.NEXT_PUBLIC_LINKEDIN_URL || "https://linkedin.com/company/airlinesmap"
+          process.env.NEXT_PUBLIC_FACEBOOK_URL || "https://facebook.com/airlinesfrom",
+          process.env.NEXT_PUBLIC_TWITTER_URL || "https://twitter.com/airlinesfrom",
+          process.env.NEXT_PUBLIC_INSTAGRAM_URL || "https://instagram.com/airlinesfrom",
+          process.env.NEXT_PUBLIC_LINKEDIN_URL || "https://linkedin.com/company/airlinesfrom"
         ],
         "address": {
           "@type": "PostalAddress",
@@ -2359,7 +2359,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "@context": "https://schema.org",
         "@type": "TravelAgency",
         "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
-        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com",
+        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com",
         "description": process.env.NEXT_PUBLIC_COMPANY_DESCRIPTION || "Find the best flight deals, hotels, and travel packages",
         "address": {
           "@type": "PostalAddress",
@@ -2370,7 +2370,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
           "addressCountry": process.env.NEXT_PUBLIC_COUNTRY || "US"
         },
         "telephone": process.env.NEXT_PUBLIC_PHONE || "+1-888-319-6206",
-        "email": process.env.NEXT_PUBLIC_EMAIL || "support@airlinesmap.com"
+        "email": process.env.NEXT_PUBLIC_EMAIL || "support@airlinesfrom.com"
       }} />
 
       {/* WebSite Schema */}
@@ -2378,21 +2378,21 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": process.env.NEXT_PUBLIC_SITE_NAME || "AirlinesFrom",
-        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com",
+        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com",
         "description": process.env.NEXT_PUBLIC_SITE_DESCRIPTION || "Find the best flight deals, hotels, and travel packages",
         "inLanguage": locale === 'en' ? 'en-US' : locale === 'es' ? 'es-ES' : locale === 'ru' ? 'ru-RU' : 'fr-FR',
         "potentialAction": {
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": `${process.env.NEXT_PUBLIC_SITE_URL || 'https://airlinesmap.com'}/${locale === 'en' ? '' : locale + '/'}search?q={search_term_string}`
+            "urlTemplate": `${process.env.NEXT_PUBLIC_SITE_URL || 'https://airlinesfrom.com'}/${locale === 'en' ? '' : locale + '/'}search?q={search_term_string}`
           },
           "query-input": "required name=search_term_string"
         },
         "publisher": {
           "@type": "Organization",
           "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
-          "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"
+          "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"
         }
       }} />
 
@@ -2878,12 +2878,12 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
-        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com",
+        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com",
         "potentialAction": {
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"}/search?q={search_term_string}`
+            "urlTemplate": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/search?q={search_term_string}`
           },
           "query-input": "required name=search_term_string"
         }
@@ -2894,8 +2894,8 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
-        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com",
-        "logo": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"}/logo.png`,
+        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com",
+        "logo": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/logo.png`,
         "description": process.env.NEXT_PUBLIC_COMPANY_DESCRIPTION || "Compare airlines and find the best flight deals",
         "foundingDate": process.env.NEXT_PUBLIC_COMPANY_FOUNDING_DATE || "2020",
         "contactPoint": {
@@ -2926,9 +2926,9 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
           }
         ],
         "sameAs": [
-          process.env.NEXT_PUBLIC_FACEBOOK_URL || "https://facebook.com/airlinesmap.com",
-          process.env.NEXT_PUBLIC_TWITTER_URL || "https://twitter.com/airlinesmap.com",
-          process.env.NEXT_PUBLIC_INSTAGRAM_URL || "https://instagram.com/airlinesmap.com"
+          process.env.NEXT_PUBLIC_FACEBOOK_URL || "https://facebook.com/airlinesfrom.com",
+          process.env.NEXT_PUBLIC_TWITTER_URL || "https://twitter.com/airlinesfrom.com",
+          process.env.NEXT_PUBLIC_INSTAGRAM_URL || "https://instagram.com/airlinesfrom.com"
         ],
         "address": {
           "@type": "PostalAddress",
@@ -2964,7 +2964,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "@type": "WebPage",
         "name": contentData?.title || `${airlineName} flights from ${departureCity} to ${arrivalCity}`,
         "description": contentData?.description?.replace(/<[^>]*>/g, '') || `Find the best ${airlineName} flight deals from ${departureCity} to ${arrivalCity}`,
-        "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"}/airlines/${airlineCode}/${params.route}`,
+        "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/airlines/${airlineCode}/${params.route}`,
         "mainEntity": {
           "@type": "Airline",
           "name": airlineName,
@@ -2977,25 +2977,25 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"
+              "item": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Airlines",
-              "item": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"}/airlines`
+              "item": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/airlines`
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": airlineName,
-              "item": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"}/airlines/${airlineCode}`
+              "item": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/airlines/${airlineCode}`
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": `${departureCity} to ${arrivalCity}`,
-              "item": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"}/airlines/${airlineCode}/${params.route}`
+              "item": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/airlines/${airlineCode}/${params.route}`
             }
           ]
         }
@@ -3006,7 +3006,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "@context": "https://schema.org",
         "@type": "TravelAgency",
         "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
-        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com",
+        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com",
         "description": process.env.NEXT_PUBLIC_COMPANY_DESCRIPTION || "Compare airlines and find the best flight deals",
         "address": {
           "@type": "PostalAddress",
@@ -3017,7 +3017,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
           "addressCountry": process.env.NEXT_PUBLIC_COUNTRY || "US"
         },
         "telephone": process.env.NEXT_PUBLIC_PHONE || "+1-888-319-6206",
-        "email": process.env.NEXT_PUBLIC_EMAIL || "support@airlinesmap.com",
+        "email": process.env.NEXT_PUBLIC_EMAIL || "support@airlinesfrom.com",
         "areaServed": {
           "@type": "Country",
           "name": contentData?.country || "India"
@@ -3083,14 +3083,14 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
           "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
           "logo": {
             "@type": "ImageObject",
-            "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"}/logo.png`
+            "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/logo.png`
           }
         },
         "datePublished": new Date().toISOString(),
         "dateModified": new Date().toISOString(),
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"}/airlines/${airlineCode}/${params.route}`
+          "@id": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/airlines/${airlineCode}/${params.route}`
         },
         "about": {
           "@type": "Place",
@@ -3143,7 +3143,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "@type": "Place",
         "name": arrivalCity,
         "description": contentData?.overview || `Information about ${arrivalCity}`,
-        "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"}/airlines/${airlineCode}/${params.route}`,
+        "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/airlines/${airlineCode}/${params.route}`,
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": "0.0", // This would need to be fetched from city data
@@ -3162,7 +3162,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "@type": "Dataset",
         "name": `${airlineName} Flight Price Data - ${departureCity} to ${arrivalCity}`,
         "description": `Historical price data for ${airlineName} flights from ${departureCity} to ${arrivalCity}`,
-        "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"}/airlines/${airlineCode}/${params.route}`,
+        "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/airlines/${airlineCode}/${params.route}`,
         "creator": {
           "@type": "Organization",
           "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom"
@@ -3197,7 +3197,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "distribution": {
           "@type": "DataDownload",
           "encodingFormat": "application/json",
-          "contentUrl": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"}/api/airline-data?airline_code=${airlineCode}&arrival_iata=${arrivalIata}&departure_iata=${departureIata}`
+          "contentUrl": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/api/airline-data?airline_code=${airlineCode}&arrival_iata=${arrivalIata}&departure_iata=${departureIata}`
         }
       }} />
 
@@ -3207,9 +3207,9 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "@type": "LocalBusiness",
         "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
         "description": process.env.NEXT_PUBLIC_COMPANY_DESCRIPTION || "Compare airlines and find the best flight deals",
-        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com",
+        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com",
         "telephone": process.env.NEXT_PUBLIC_PHONE || "+1-888-319-6206",
-        "email": process.env.NEXT_PUBLIC_EMAIL || "support@airlinesmap.com",
+        "email": process.env.NEXT_PUBLIC_EMAIL || "support@airlinesfrom.com",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": process.env.NEXT_PUBLIC_ADDRESS || "8th the green suite b",
@@ -3319,7 +3319,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "@type": "Dataset",
         "name": `${airlineName} Flight Price Data - ${departureCity} to ${arrivalCity}`,
         "description": `Historical price data for ${airlineName} flights from ${departureCity} to ${arrivalCity}`,
-        "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"}/airlines/${airlineCode}/${params.route}`,
+        "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/airlines/${airlineCode}/${params.route}`,
         "creator": {
           "@type": "Organization",
           "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom"
@@ -3342,7 +3342,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "distribution": {
           "@type": "DataDownload",
           "encodingFormat": "application/json",
-          "contentUrl": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesmap.com"}/api/airlines/${airlineCode}/${params.route}/prices`
+          "contentUrl": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinesfrom.com"}/api/airlines/${airlineCode}/${params.route}/prices`
         }
       }} />
 

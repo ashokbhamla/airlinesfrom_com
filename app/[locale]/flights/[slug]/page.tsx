@@ -16,11 +16,11 @@ import FlightSearchBox from '@/components/FlightSearchBox';
 
 // Helper function to get domain ID based on current domain
 function getDomainId(): 1 | 2 {
-  const domain = process.env.NEXT_PUBLIC_DOMAIN || 'airlinesmap.com';
+  const domain = process.env.NEXT_PUBLIC_DOMAIN || 'airlinesfrom.com';
   // domain_id mapping:
-  // 1 = airlinesmap.com
+  // 1 = airlinesfrom.com
   // 2 = other domain (if you have multiple domains)
-  return domain.includes('airlinesmap.com') ? 1 : 2;
+  return domain.includes('airlinesfrom.com') ? 1 : 2;
 }
 
 // Helper function to check if slug is a valid airport code
@@ -47,7 +47,7 @@ function parseFlightSlug(slug: string): { departureIata: string; arrivalIata: st
 
 // Helper function to generate canonical URL for flights from airport
 function generateFlightsFromCanonicalUrl(airportCode: string, locale: string): string {
-  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesmap.com';
+  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com';
   const localePath = locale === 'en' ? '' : `/${locale}`;
   return `${baseUrl}${localePath}/flights/from/${airportCode}`;
 }

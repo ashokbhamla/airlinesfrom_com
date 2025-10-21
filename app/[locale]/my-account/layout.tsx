@@ -3,12 +3,12 @@ import { generateAlternateUrls } from '@/lib/canonical';
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const { locale } = params;
-  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://flightsearchs.com';
+  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com';
   
   return {
     title: {
-      template: `%s | ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'} - My Account`,
-      default: `My Account - Manage Your Travel Profile | ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'}`
+      template: `%s | ☎ 𝟖𝟖𝟖-𝟑𝟏𝟗-𝟔𝟐𝟎𝟔`,
+      default: `My Account - Manage Your Travel Profile | ☎ 𝟖𝟖𝟖-𝟑𝟏𝟗-𝟔𝟐𝟎𝟔`
     },
     description: `Manage your ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'} account, view booking history, update travel preferences, and access exclusive member benefits.`,
     keywords: [
