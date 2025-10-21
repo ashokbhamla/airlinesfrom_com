@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: `${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'} - Book Flights, Hotels, and Cars`,
-    short_name: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom',
+    name: `${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlineFrom'} - Book Flights, Hotels, and Cars`,
+    short_name: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlineFrom',
     description: 'Find the best deals on flights, hotels, and car rentals worldwide.',
     start_url: '/',
     display: 'standalone',

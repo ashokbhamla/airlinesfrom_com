@@ -1,4 +1,4 @@
-# 🔍 Comprehensive SEO Audit Report - AirlinesFrom.com
+# 🔍 Comprehensive SEO Audit Report - AirlineFrom.com
 
 **Date:** October 21, 2025  
 **Audited By:** AI SEO Analyst  
@@ -593,7 +593,7 @@ NEXT_PUBLIC_COMPANY_EMAIL=support@airlinefrom.com
 
 ### Your SEO vs. Competitors
 
-| Feature | AirlinesFrom | Typical Competitor | Winner |
+| Feature | AirlineFrom | Typical Competitor | Winner |
 |---------|--------------|-------------------|---------|
 | Schema.org | 15 types ✅ | 3-5 types | **You** 🏆 |
 | i18n Support | 4 languages ✅ | 1-2 languages | **You** 🏆 |

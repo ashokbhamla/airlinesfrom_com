@@ -1,4 +1,4 @@
-# 🚀 Fix Vercel Deployment - AirlinesFrom
+# 🚀 Fix Vercel Deployment - AirlineFrom
 
 ## 🔴 Problem
 Your live site at https://airlinefrom.com/airlines/ai/del is showing:
@@ -33,9 +33,9 @@ NEXT_PUBLIC_COMPANY_PHONE=+1-888-319-6206
 
 ### 3. Branding
 ```env
-NEXT_PUBLIC_HEADER_TITLE=AirlinesFrom
-NEXT_PUBLIC_SITE_NAME=AirlinesFrom
-NEXT_PUBLIC_SITE_AUTHOR=AirlinesFrom Team
+NEXT_PUBLIC_HEADER_TITLE=AirlineFrom
+NEXT_PUBLIC_SITE_NAME=AirlineFrom
+NEXT_PUBLIC_SITE_AUTHOR=AirlineFrom Team
 NEXT_PUBLIC_SITE_URL=https://airlinefrom.com
 ```
 
@@ -196,7 +196,7 @@ curl "https://api.triposia.com/real/airlines?airline_code=ai&departure_iata=del&
 
 - [ ] Added all NEXT_PUBLIC_API_* variables
 - [ ] Added all NEXT_PUBLIC_DOMAIN variables
-- [ ] Added branding variables (AirlinesFrom)
+- [ ] Added branding variables (AirlineFrom)
 - [ ] Added social media URLs
 - [ ] Added CDN configuration
 - [ ] Selected all environments (Production, Preview, Development)

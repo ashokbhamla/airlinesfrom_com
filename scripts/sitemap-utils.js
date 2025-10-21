@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Sitemap Utilities for AirlinesFrom
+ * Sitemap Utilities for AirlineFrom
  * 
  * This script provides utilities to manage and validate the sitemap
  * 
@@ -151,7 +151,7 @@ async function generateReport() {
 async function main() {
   const command = process.argv[2];
   
-  console.log('🚀 AirlinesFrom Sitemap Utilities\n');
+  console.log('🚀 AirlineFrom Sitemap Utilities\n');
   
   switch (command) {
     case 'validate':

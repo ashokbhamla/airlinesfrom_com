@@ -1,8 +1,8 @@
-# Sitemap Guide for AirlinesFrom
+# Sitemap Guide for AirlineFrom
 
 ## Overview
 
-This guide explains how the sitemap system works for the AirlinesFrom website and how to maintain it.
+This guide explains how the sitemap system works for the AirlineFrom website and how to maintain it.
 
 ## Files Structure
 

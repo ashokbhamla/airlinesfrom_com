@@ -2,7 +2,7 @@
 export const envConfig = {
   // Header Configuration
   header: {
-    title: process.env.NEXT_PUBLIC_HEADER_TITLE || 'AirlinesFrom',
+    title: process.env.NEXT_PUBLIC_HEADER_TITLE || 'AirlineFrom',
     metaDescription: process.env.NEXT_PUBLIC_HEADER_META_DESCRIPTION || 'Book flights, hotels, and cars',
     navigation: {
       airlines: process.env.NEXT_PUBLIC_NAV_AIRLINES || '/airlines',
@@ -18,7 +18,7 @@ export const envConfig = {
   
   // Footer Configuration
   footer: {
-    copyright: process.env.NEXT_PUBLIC_FOOTER_COPYRIGHT || '© 2018-2025 AirlinesFrom Inc. All rights reserved.',
+    copyright: process.env.NEXT_PUBLIC_FOOTER_COPYRIGHT || '© 2018-2025 AirlineFrom Inc. All rights reserved.',
     description1: process.env.NEXT_PUBLIC_FOOTER_DESCRIPTION_1 || 'Helps you find the cheapest flight deals to any destination with ease.',
     description2: process.env.NEXT_PUBLIC_FOOTER_DESCRIPTION_2 || 'Browse through the best hotels and find exclusive deals.',
     navigation: {

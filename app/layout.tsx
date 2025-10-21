@@ -9,24 +9,24 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'AirlinesFrom - Find Flights',
+  title: 'AirlineFrom - Find Flights',
   description: 'Helps you find the cheapest flight deals to any destination with ease.',
   keywords: 'flights,hotels,travel,booking',
-  authors: [{ name: 'AirlinesFrom' }],
-  creator: 'AirlinesFrom',
-  publisher: 'AirlinesFrom',
+  authors: [{ name: 'AirlineFrom' }],
+  creator: 'AirlineFrom',
+  publisher: 'AirlineFrom',
   robots: 'index, follow',
   openGraph: {
-    title: 'AirlinesFrom - Find Flights',
+    title: 'AirlineFrom - Find Flights',
     description: 'Helps you find the cheapest flight deals to any destination with ease.',
     url: 'https://airlinefrom.com',
-    siteName: 'AirlinesFrom',
+    siteName: 'AirlineFrom',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AirlinesFrom - Find Flights',
+    title: 'AirlineFrom - Find Flights',
     description: 'Helps you find the cheapest flight deals to any destination with ease.',
   },
   manifest: '/manifest.webmanifest',

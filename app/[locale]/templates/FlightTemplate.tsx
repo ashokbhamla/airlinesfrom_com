@@ -1711,7 +1711,7 @@ const FlightTemplate = memo(function FlightTemplate({
               "description": pageData?.description || `Find the best flight deals and prices from ${departureCityName} to ${arrivalCityName || 'various destinations'}. Compare prices across multiple airlines and book your next trip.`,
               "brand": {
                 "@type": "Brand",
-                "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom"
+                "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlineFrom"
               },
               "offers": transformedFlights && transformedFlights.length > 0 ? {
                 "@type": "AggregateOffer",
@@ -1772,11 +1772,11 @@ const FlightTemplate = memo(function FlightTemplate({
               "description": pageData?.description || content.description,
               "author": {
                 "@type": "Organization",
-                "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom"
+                "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlineFrom"
               },
               "publisher": {
                 "@type": "Organization",
-                "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
+                "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlineFrom",
                 "logo": {
                   "@type": "ImageObject",
                   "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"}/logo.png`
@@ -1842,7 +1842,7 @@ const FlightTemplate = memo(function FlightTemplate({
               "url": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"}/flights/${departureIata}${arrivalIata ? `-${arrivalIata}` : ''}`,
               "creator": {
                 "@type": "Organization",
-                "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom"
+                "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlineFrom"
               },
               "license": "https://creativecommons.org/licenses/by/4.0/",
               "variableMeasured": [
@@ -1901,7 +1901,7 @@ const FlightTemplate = memo(function FlightTemplate({
             <SchemaOrg data={{
               "@context": "https://schema.org",
               "@type": "TravelAgency",
-              "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlinesFrom",
+              "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlineFrom",
               "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com",
               "description": process.env.NEXT_PUBLIC_COMPANY_DESCRIPTION || "Compare airlines and find the best flight deals",
               "address": {

@@ -51,7 +51,7 @@ gcloud run services update $SERVICE_NAME \
     --set-env-vars="NEXT_PUBLIC_COMPANY_LOGO=https://airlinefrom.com/logo.png" \
     --set-env-vars="NEXT_PUBLIC_API_CONTENT=https://api.triposia.com" \
     --set-env-vars="NEXT_PUBLIC_API_REAL=https://api.triposia.com" \
-    --set-env-vars="NEXT_PUBLIC_HEADER_TITLE=AirlinesFrom" \
+    --set-env-vars="NEXT_PUBLIC_HEADER_TITLE=AirlineFrom" \
     --set-env-vars="NEXT_PUBLIC_HEADER_META_DESCRIPTION=Book flights, hotels, and cars" \
     --set-env-vars="NEXT_PUBLIC_HEADER_META_KEYWORDS=flights, hotels, travel, booking, airlines" \
     --set-env-vars="NEXT_PUBLIC_NAV_AIRLINES=/airlines" \
@@ -61,7 +61,7 @@ gcloud run services update $SERVICE_NAME \
     --set-env-vars="NEXT_PUBLIC_NAV_LOGIN=/login" \
     --set-env-vars="NEXT_PUBLIC_NAV_REGISTER=/register" \
     --set-env-vars="NEXT_PUBLIC_NAV_MY_ACCOUNT=/my-account" \
-    --set-env-vars="NEXT_PUBLIC_FOOTER_COPYRIGHT=© 2018-2025 AirlinesFrom Inc. All rights reserved." \
+    --set-env-vars="NEXT_PUBLIC_FOOTER_COPYRIGHT=© 2018-2025 AirlineFrom Inc. All rights reserved." \
     --set-env-vars="NEXT_PUBLIC_FOOTER_DESCRIPTION_1=Helps you find the cheapest flight deals to any destination with ease." \
     --set-env-vars="NEXT_PUBLIC_FOOTER_DESCRIPTION_2=Browse through the best hotels and find exclusive deals." \
     --set-env-vars="NEXT_PUBLIC_FOOTER_ABOUT_US=/about-us" \
@@ -96,10 +96,10 @@ gcloud run services update $SERVICE_NAME \
     --set-env-vars="NEXT_PUBLIC_LOG_LEVEL=error" \
     --set-env-vars="PORT=3000" \
     --set-env-vars="HOSTNAME=0.0.0.0" \
-    --set-env-vars="NEXT_PUBLIC_SITE_NAME=AirlinesFrom" \
+    --set-env-vars="NEXT_PUBLIC_SITE_NAME=AirlineFrom" \
     --set-env-vars="NEXT_PUBLIC_SITE_DESCRIPTION=Find the best flight deals, hotels, and travel packages" \
     --set-env-vars="NEXT_PUBLIC_SITE_KEYWORDS=flights, hotels, travel, booking, airlines, deals, cheap flights" \
-    --set-env-vars="NEXT_PUBLIC_SITE_AUTHOR=AirlinesFrom Team" \
+    --set-env-vars="NEXT_PUBLIC_SITE_AUTHOR=AirlineFrom Team" \
     --set-env-vars="NEXT_PUBLIC_SITE_URL=https://airlinefrom.com" \
     --set-env-vars="NEXT_PUBLIC_SITE_IMAGE=https://airlinefrom.com/og-image.jpg" \
     --set-env-vars="NEXT_PUBLIC_FEATURE_BOOKING_ENABLED=true" \

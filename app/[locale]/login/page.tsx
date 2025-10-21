@@ -118,7 +118,7 @@ export default function LoginPage({ params }: LoginPageProps) {
               Welcome Back
             </Typography>
             <Typography variant="body1" sx={{ color: '#666' }}>
-              Sign in to your {process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'} account
+              Sign in to your {process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlineFrom'} account
             </Typography>
           </Box>
 

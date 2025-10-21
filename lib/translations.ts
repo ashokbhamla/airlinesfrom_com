@@ -271,7 +271,7 @@ const translations: Record<Locale, Translations> = {
       sitemap: 'Sitemap',
       description1: 'Helps you find the cheapest flight deals to any destination with ease.',
       description2: 'Browse through the best hotels and find exclusive deals.',
-      copyright: '© 2018-2025 AirlinesFrom Inc. All rights reserved.'
+      copyright: '© 2018-2025 AirlineFrom Inc. All rights reserved.'
     },
     flightSearch: {
       roundTrip: 'ROUND TRIP',
@@ -302,32 +302,32 @@ const translations: Record<Locale, Translations> = {
     },
     pages: {
       aboutUs: {
-        title: 'About Us - AirlinesFrom',
-        description: 'Learn more about AirlinesFrom, your trusted partner for finding the best flight deals and travel experiences worldwide.',
-        heading: 'About AirlinesFrom',
+        title: 'About Us - AirlineFrom',
+        description: 'Learn more about AirlineFrom, your trusted partner for finding the best flight deals and travel experiences worldwide.',
+        heading: 'About AirlineFrom',
         content: 'We are dedicated to helping travelers find the best flight deals and travel experiences. Our platform compares prices from multiple airlines to ensure you get the most value for your money.'
       },
       termsAndConditions: {
-        title: 'Terms and Conditions - AirlinesFrom',
-        description: 'Read our terms and conditions to understand the rules and guidelines for using AirlinesFrom platform.',
+        title: 'Terms and Conditions - AirlineFrom',
+        description: 'Read our terms and conditions to understand the rules and guidelines for using AirlineFrom platform.',
         heading: 'Terms and Conditions',
-        content: 'Please read these terms and conditions carefully before using our service. By using AirlinesFrom, you agree to be bound by these terms.'
+        content: 'Please read these terms and conditions carefully before using our service. By using AirlineFrom, you agree to be bound by these terms.'
       },
       privacyPolicy: {
-        title: 'Privacy Policy - AirlinesFrom',
-        description: 'Learn how AirlinesFrom protects your personal information and privacy while using our travel booking platform.',
+        title: 'Privacy Policy - AirlineFrom',
+        description: 'Learn how AirlineFrom protects your personal information and privacy while using our travel booking platform.',
         heading: 'Privacy Policy',
         content: 'We are committed to protecting your privacy and personal information. This policy explains how we collect, use, and safeguard your data.'
       },
       refundPolicy: {
-        title: 'Refund Policy - AirlinesFrom',
-        description: 'Understand our refund and cancellation policies for flight bookings made through AirlinesFrom.',
+        title: 'Refund Policy - AirlineFrom',
+        description: 'Understand our refund and cancellation policies for flight bookings made through AirlineFrom.',
         heading: 'Refund Policy',
         content: 'Our refund policy outlines the conditions under which you can cancel or modify your bookings and receive refunds.'
       },
       contactUs: {
-        title: 'Contact Us - AirlinesFrom',
-        description: 'Get in touch with AirlinesFrom customer support for assistance with your travel bookings and inquiries.',
+        title: 'Contact Us - AirlineFrom',
+        description: 'Get in touch with AirlineFrom customer support for assistance with your travel bookings and inquiries.',
         heading: 'Contact Us',
         content: 'We are here to help you with any questions or concerns about your travel bookings. Contact our support team for assistance.'
       },
@@ -347,33 +347,33 @@ const translations: Record<Locale, Translations> = {
         customerServiceDesc: 'Our customer service team is available 24/7 to assist you with bookings, changes, cancellations, and any other inquiries about your flight.'
       },
       airlines: {
-        title: 'Airlines - AirlinesFrom',
+        title: 'Airlines - AirlineFrom',
         description: 'Browse and compare flights from major airlines worldwide. Find the best airline deals for your next trip.',
         heading: 'Airlines'
       },
       hotels: {
-        title: 'Hotels - AirlinesFrom',
+        title: 'Hotels - AirlineFrom',
         description: 'Find and book hotels near airports and destinations worldwide. Compare prices and amenities.',
         heading: 'Hotels'
       },
       search: {
-        title: 'Search Results - AirlinesFrom',
+        title: 'Search Results - AirlineFrom',
         description: 'Search results for flights and travel options. Find the best deals for your next trip.',
         heading: 'Search Results'
       },
       login: {
-        title: 'Login - AirlinesFrom',
-        description: 'Sign in to your AirlinesFrom account to manage your bookings and preferences.',
+        title: 'Login - AirlineFrom',
+        description: 'Sign in to your AirlineFrom account to manage your bookings and preferences.',
         heading: 'Sign In'
       },
       register: {
-        title: 'Register - AirlinesFrom',
-        description: 'Create a new AirlinesFrom account to start booking flights and managing your travel preferences.',
+        title: 'Register - AirlineFrom',
+        description: 'Create a new AirlineFrom account to start booking flights and managing your travel preferences.',
         heading: 'Create Account'
       },
       myAccount: {
-        title: 'My Account - AirlinesFrom',
-        description: 'Manage your AirlinesFrom account, view bookings, and update your travel preferences.',
+        title: 'My Account - AirlineFrom',
+        description: 'Manage your AirlineFrom account, view bookings, and update your travel preferences.',
         heading: 'My Account'
       }
     },
@@ -517,7 +517,7 @@ const translations: Record<Locale, Translations> = {
       sitemap: 'Mapa del Sitio',
       description1: 'Te ayuda a encontrar las mejores ofertas de vuelos a cualquier destino con facilidad.',
       description2: 'Navega por los mejores hoteles y encuentra ofertas exclusivas.',
-      copyright: '© 2018-2025 AirlinesFrom Inc. Todos los derechos reservados.'
+      copyright: '© 2018-2025 AirlineFrom Inc. Todos los derechos reservados.'
     },
     flightSearch: {
       roundTrip: 'IDA Y VUELTA',
@@ -548,32 +548,32 @@ const translations: Record<Locale, Translations> = {
     },
     pages: {
       aboutUs: {
-        title: 'Acerca de Nosotros - AirlinesFrom',
-        description: 'Conoce más sobre AirlinesFrom, tu socio de confianza para encontrar las mejores ofertas de vuelos y experiencias de viaje en todo el mundo.',
-        heading: 'Acerca de AirlinesFrom',
+        title: 'Acerca de Nosotros - AirlineFrom',
+        description: 'Conoce más sobre AirlineFrom, tu socio de confianza para encontrar las mejores ofertas de vuelos y experiencias de viaje en todo el mundo.',
+        heading: 'Acerca de AirlineFrom',
         content: 'Estamos dedicados a ayudar a los viajeros a encontrar las mejores ofertas de vuelos y experiencias de viaje. Nuestra plataforma compara precios de múltiples aerolíneas para asegurar que obtengas el mejor valor por tu dinero.'
       },
       termsAndConditions: {
-        title: 'Términos y Condiciones - AirlinesFrom',
-        description: 'Lee nuestros términos y condiciones para entender las reglas y pautas para usar la plataforma AirlinesFrom.',
+        title: 'Términos y Condiciones - AirlineFrom',
+        description: 'Lee nuestros términos y condiciones para entender las reglas y pautas para usar la plataforma AirlineFrom.',
         heading: 'Términos y Condiciones',
-        content: 'Por favor lee estos términos y condiciones cuidadosamente antes de usar nuestro servicio. Al usar AirlinesFrom, aceptas estar sujeto a estos términos.'
+        content: 'Por favor lee estos términos y condiciones cuidadosamente antes de usar nuestro servicio. Al usar AirlineFrom, aceptas estar sujeto a estos términos.'
       },
       privacyPolicy: {
-        title: 'Política de Privacidad - AirlinesFrom',
-        description: 'Aprende cómo AirlinesFrom protege tu información personal y privacidad mientras usas nuestra plataforma de reservas de viajes.',
+        title: 'Política de Privacidad - AirlineFrom',
+        description: 'Aprende cómo AirlineFrom protege tu información personal y privacidad mientras usas nuestra plataforma de reservas de viajes.',
         heading: 'Política de Privacidad',
         content: 'Estamos comprometidos a proteger tu privacidad e información personal. Esta política explica cómo recopilamos, usamos y protegemos tus datos.'
       },
       refundPolicy: {
-        title: 'Política de Reembolso - AirlinesFrom',
-        description: 'Entiende nuestras políticas de reembolso y cancelación para reservas de vuelos hechas a través de AirlinesFrom.',
+        title: 'Política de Reembolso - AirlineFrom',
+        description: 'Entiende nuestras políticas de reembolso y cancelación para reservas de vuelos hechas a través de AirlineFrom.',
         heading: 'Política de Reembolso',
         content: 'Nuestra política de reembolso describe las condiciones bajo las cuales puedes cancelar o modificar tus reservas y recibir reembolsos.'
       },
       contactUs: {
-        title: 'Contáctanos - AirlinesFrom',
-        description: 'Ponte en contacto con el soporte al cliente de AirlinesFrom para asistencia con tus reservas de viaje e consultas.',
+        title: 'Contáctanos - AirlineFrom',
+        description: 'Ponte en contacto con el soporte al cliente de AirlineFrom para asistencia con tus reservas de viaje e consultas.',
         heading: 'Contáctanos',
         content: 'Estamos aquí para ayudarte con cualquier pregunta o inquietud sobre tus reservas de viaje. Contacta a nuestro equipo de soporte para asistencia.'
       },
@@ -593,33 +593,33 @@ const translations: Record<Locale, Translations> = {
         customerServiceDesc: 'Nuestro equipo de servicio al cliente está disponible 24/7 para asistirte con reservas, cambios, cancelaciones y cualquier otra consulta sobre tu vuelo.'
       },
       airlines: {
-        title: 'Aerolíneas - AirlinesFrom',
+        title: 'Aerolíneas - AirlineFrom',
         description: 'Explora y compara vuelos de las principales aerolíneas del mundo. Encuentra las mejores ofertas de aerolíneas para tu próximo viaje.',
         heading: 'Aerolíneas'
       },
       hotels: {
-        title: 'Hoteles - AirlinesFrom',
+        title: 'Hoteles - AirlineFrom',
         description: 'Encuentra y reserva hoteles cerca de aeropuertos y destinos en todo el mundo. Compara precios y amenidades.',
         heading: 'Hoteles'
       },
       search: {
-        title: 'Resultados de Búsqueda - AirlinesFrom',
+        title: 'Resultados de Búsqueda - AirlineFrom',
         description: 'Resultados de búsqueda para vuelos y opciones de viaje. Encuentra las mejores ofertas para tu próximo viaje.',
         heading: 'Resultados de Búsqueda'
       },
       login: {
-        title: 'Iniciar Sesión - AirlinesFrom',
-        description: 'Inicia sesión en tu cuenta de AirlinesFrom para gestionar tus reservas y preferencias.',
+        title: 'Iniciar Sesión - AirlineFrom',
+        description: 'Inicia sesión en tu cuenta de AirlineFrom para gestionar tus reservas y preferencias.',
         heading: 'Iniciar Sesión'
       },
       register: {
-        title: 'Registrarse - AirlinesFrom',
-        description: 'Crea una nueva cuenta de AirlinesFrom para comenzar a reservar vuelos y gestionar tus preferencias de viaje.',
+        title: 'Registrarse - AirlineFrom',
+        description: 'Crea una nueva cuenta de AirlineFrom para comenzar a reservar vuelos y gestionar tus preferencias de viaje.',
         heading: 'Crear Cuenta'
       },
       myAccount: {
-        title: 'Mi Cuenta - AirlinesFrom',
-        description: 'Gestiona tu cuenta de AirlinesFrom, ve tus reservas y actualiza tus preferencias de viaje.',
+        title: 'Mi Cuenta - AirlineFrom',
+        description: 'Gestiona tu cuenta de AirlineFrom, ve tus reservas y actualiza tus preferencias de viaje.',
         heading: 'Mi Cuenta'
       }
     },
@@ -763,7 +763,7 @@ const translations: Record<Locale, Translations> = {
       sitemap: 'Карта Сайта',
       description1: 'Помогает найти самые дешевые предложения авиабилетов в любое место назначения с легкостью.',
       description2: 'Просматривайте лучшие отели и находите эксклюзивные предложения.',
-      copyright: '© 2018-2025 AirlinesFrom Inc. Все права защищены.'
+      copyright: '© 2018-2025 AirlineFrom Inc. Все права защищены.'
     },
     flightSearch: {
       roundTrip: 'ТУДА И ОБРАТНО',
@@ -794,32 +794,32 @@ const translations: Record<Locale, Translations> = {
     },
     pages: {
       aboutUs: {
-        title: 'О нас - AirlinesFrom',
-        description: 'Узнайте больше о AirlinesFrom, вашем надежном партнере для поиска лучших предложений авиабилетов и путешествий по всему миру.',
-        heading: 'О AirlinesFrom',
+        title: 'О нас - AirlineFrom',
+        description: 'Узнайте больше о AirlineFrom, вашем надежном партнере для поиска лучших предложений авиабилетов и путешествий по всему миру.',
+        heading: 'О AirlineFrom',
         content: 'Мы посвящены помощи путешественникам в поиске лучших предложений авиабилетов и путешествий. Наша платформа сравнивает цены различных авиакомпаний, чтобы обеспечить вам максимальную ценность за ваши деньги.'
       },
       termsAndConditions: {
-        title: 'Условия и положения - AirlinesFrom',
-        description: 'Прочитайте наши условия и положения, чтобы понять правила и руководящие принципы использования платформы AirlinesFrom.',
+        title: 'Условия и положения - AirlineFrom',
+        description: 'Прочитайте наши условия и положения, чтобы понять правила и руководящие принципы использования платформы AirlineFrom.',
         heading: 'Условия и положения',
-        content: 'Пожалуйста, внимательно прочитайте эти условия и положения перед использованием нашего сервиса. Используя AirlinesFrom, вы соглашаетесь соблюдать эти условия.'
+        content: 'Пожалуйста, внимательно прочитайте эти условия и положения перед использованием нашего сервиса. Используя AirlineFrom, вы соглашаетесь соблюдать эти условия.'
       },
       privacyPolicy: {
-        title: 'Политика конфиденциальности - AirlinesFrom',
-        description: 'Узнайте, как AirlinesFrom защищает вашу личную информацию и конфиденциальность при использовании нашей платформы бронирования путешествий.',
+        title: 'Политика конфиденциальности - AirlineFrom',
+        description: 'Узнайте, как AirlineFrom защищает вашу личную информацию и конфиденциальность при использовании нашей платформы бронирования путешествий.',
         heading: 'Политика конфиденциальности',
         content: 'Мы привержены защите вашей конфиденциальности и личной информации. Эта политика объясняет, как мы собираем, используем и защищаем ваши данные.'
       },
       refundPolicy: {
-        title: 'Политика возврата - AirlinesFrom',
-        description: 'Поймите наши политики возврата и отмены для бронирований авиабилетов, сделанных через AirlinesFrom.',
+        title: 'Политика возврата - AirlineFrom',
+        description: 'Поймите наши политики возврата и отмены для бронирований авиабилетов, сделанных через AirlineFrom.',
         heading: 'Политика возврата',
         content: 'Наша политика возврата описывает условия, при которых вы можете отменить или изменить ваши бронирования и получить возврат средств.'
       },
       contactUs: {
-        title: 'Свяжитесь с нами - AirlinesFrom',
-        description: 'Свяжитесь со службой поддержки AirlinesFrom для получения помощи с вашими бронированиями путешествий и запросами.',
+        title: 'Свяжитесь с нами - AirlineFrom',
+        description: 'Свяжитесь со службой поддержки AirlineFrom для получения помощи с вашими бронированиями путешествий и запросами.',
         heading: 'Свяжитесь с нами',
         content: 'Мы здесь, чтобы помочь вам с любыми вопросами или проблемами, касающимися ваших бронирований путешествий. Обратитесь к нашей команде поддержки за помощью.'
       },
@@ -839,33 +839,33 @@ const translations: Record<Locale, Translations> = {
         customerServiceDesc: 'Наша команда службы поддержки доступна 24/7, чтобы помочь вам с бронированием, изменениями, отменами и любыми другими вопросами о вашем рейсе.'
       },
       airlines: {
-        title: 'Авиакомпании - AirlinesFrom',
+        title: 'Авиакомпании - AirlineFrom',
         description: 'Просматривайте и сравнивайте рейсы основных авиакомпаний мира. Найдите лучшие предложения авиакомпаний для вашей следующей поездки.',
         heading: 'Авиакомпании'
       },
       hotels: {
-        title: 'Отели - AirlinesFrom',
+        title: 'Отели - AirlineFrom',
         description: 'Найдите и забронируйте отели рядом с аэропортами и направлениями по всему миру. Сравнивайте цены и удобства.',
         heading: 'Отели'
       },
       search: {
-        title: 'Результаты поиска - AirlinesFrom',
+        title: 'Результаты поиска - AirlineFrom',
         description: 'Результаты поиска рейсов и вариантов путешествий. Найдите лучшие предложения для вашей следующей поездки.',
         heading: 'Результаты поиска'
       },
       login: {
-        title: 'Вход - AirlinesFrom',
-        description: 'Войдите в свой аккаунт AirlinesFrom для управления вашими бронированиями и предпочтениями.',
+        title: 'Вход - AirlineFrom',
+        description: 'Войдите в свой аккаунт AirlineFrom для управления вашими бронированиями и предпочтениями.',
         heading: 'Вход'
       },
       register: {
-        title: 'Регистрация - AirlinesFrom',
-        description: 'Создайте новый аккаунт AirlinesFrom, чтобы начать бронировать рейсы и управлять вашими предпочтениями путешествий.',
+        title: 'Регистрация - AirlineFrom',
+        description: 'Создайте новый аккаунт AirlineFrom, чтобы начать бронировать рейсы и управлять вашими предпочтениями путешествий.',
         heading: 'Создать аккаунт'
       },
       myAccount: {
-        title: 'Мой аккаунт - AirlinesFrom',
-        description: 'Управляйте своим аккаунтом AirlinesFrom, просматривайте бронирования и обновляйте ваши предпочтения путешествий.',
+        title: 'Мой аккаунт - AirlineFrom',
+        description: 'Управляйте своим аккаунтом AirlineFrom, просматривайте бронирования и обновляйте ваши предпочтения путешествий.',
         heading: 'Мой аккаунт'
       }
     },
@@ -1009,7 +1009,7 @@ const translations: Record<Locale, Translations> = {
       sitemap: 'Plan du Site',
       description1: 'Vous aide à trouver les meilleures offres de vols vers n\'importe quelle destination avec facilité.',
       description2: 'Parcourez les meilleurs hôtels et trouvez des offres exclusives.',
-      copyright: '© 2018-2025 AirlinesFrom Inc. Tous droits réservés.'
+      copyright: '© 2018-2025 AirlineFrom Inc. Tous droits réservés.'
     },
     flightSearch: {
       roundTrip: 'ALLER-RETOUR',
@@ -1040,32 +1040,32 @@ const translations: Record<Locale, Translations> = {
     },
     pages: {
       aboutUs: {
-        title: 'À propos de nous - AirlinesFrom',
-        description: 'En savoir plus sur AirlinesFrom, votre partenaire de confiance pour trouver les meilleures offres de vols et expériences de voyage dans le monde entier.',
-        heading: 'À propos de AirlinesFrom',
+        title: 'À propos de nous - AirlineFrom',
+        description: 'En savoir plus sur AirlineFrom, votre partenaire de confiance pour trouver les meilleures offres de vols et expériences de voyage dans le monde entier.',
+        heading: 'À propos de AirlineFrom',
         content: 'Nous nous consacrons à aider les voyageurs à trouver les meilleures offres de vols et expériences de voyage. Notre plateforme compare les prix de plusieurs compagnies aériennes pour vous assurer d\'obtenir le meilleur rapport qualité-prix.'
       },
       termsAndConditions: {
-        title: 'Termes et conditions - AirlinesFrom',
-        description: 'Lisez nos termes et conditions pour comprendre les règles et directives d\'utilisation de la plateforme AirlinesFrom.',
+        title: 'Termes et conditions - AirlineFrom',
+        description: 'Lisez nos termes et conditions pour comprendre les règles et directives d\'utilisation de la plateforme AirlineFrom.',
         heading: 'Termes et conditions',
-        content: 'Veuillez lire attentivement ces termes et conditions avant d\'utiliser notre service. En utilisant AirlinesFrom, vous acceptez d\'être lié par ces termes.'
+        content: 'Veuillez lire attentivement ces termes et conditions avant d\'utiliser notre service. En utilisant AirlineFrom, vous acceptez d\'être lié par ces termes.'
       },
       privacyPolicy: {
-        title: 'Politique de confidentialité - AirlinesFrom',
-        description: 'Découvrez comment AirlinesFrom protège vos informations personnelles et votre vie privée lors de l\'utilisation de notre plateforme de réservation de voyages.',
+        title: 'Politique de confidentialité - AirlineFrom',
+        description: 'Découvrez comment AirlineFrom protège vos informations personnelles et votre vie privée lors de l\'utilisation de notre plateforme de réservation de voyages.',
         heading: 'Politique de confidentialité',
         content: 'Nous nous engageons à protéger votre vie privée et vos informations personnelles. Cette politique explique comment nous collectons, utilisons et protégeons vos données.'
       },
       refundPolicy: {
-        title: 'Politique de remboursement - AirlinesFrom',
-        description: 'Comprenez nos politiques de remboursement et d\'annulation pour les réservations de vols effectuées via AirlinesFrom.',
+        title: 'Politique de remboursement - AirlineFrom',
+        description: 'Comprenez nos politiques de remboursement et d\'annulation pour les réservations de vols effectuées via AirlineFrom.',
         heading: 'Politique de remboursement',
         content: 'Notre politique de remboursement décrit les conditions dans lesquelles vous pouvez annuler ou modifier vos réservations et recevoir des remboursements.'
       },
       contactUs: {
-        title: 'Contactez-nous - AirlinesFrom',
-        description: 'Contactez le support client de AirlinesFrom pour obtenir de l\'aide avec vos réservations de voyage et vos demandes.',
+        title: 'Contactez-nous - AirlineFrom',
+        description: 'Contactez le support client de AirlineFrom pour obtenir de l\'aide avec vos réservations de voyage et vos demandes.',
         heading: 'Contactez-nous',
         content: 'Nous sommes là pour vous aider avec toute question ou préoccupation concernant vos réservations de voyage. Contactez notre équipe de support pour obtenir de l\'aide.'
       },
@@ -1085,33 +1085,33 @@ const translations: Record<Locale, Translations> = {
         customerServiceDesc: 'Notre équipe de service client est disponible 24/7 pour vous aider avec les réservations, les modifications, les annulations et toute autre question concernant votre vol.'
       },
       airlines: {
-        title: 'Compagnies aériennes - AirlinesFrom',
+        title: 'Compagnies aériennes - AirlineFrom',
         description: 'Parcourez et comparez les vols des principales compagnies aériennes du monde. Trouvez les meilleures offres de compagnies aériennes pour votre prochain voyage.',
         heading: 'Compagnies aériennes'
       },
       hotels: {
-        title: 'Hôtels - AirlinesFrom',
+        title: 'Hôtels - AirlineFrom',
         description: 'Trouvez et réservez des hôtels près des aéroports et destinations du monde entier. Comparez les prix et les équipements.',
         heading: 'Hôtels'
       },
       search: {
-        title: 'Résultats de recherche - AirlinesFrom',
+        title: 'Résultats de recherche - AirlineFrom',
         description: 'Résultats de recherche pour les vols et options de voyage. Trouvez les meilleures offres pour votre prochain voyage.',
         heading: 'Résultats de recherche'
       },
       login: {
-        title: 'Connexion - AirlinesFrom',
-        description: 'Connectez-vous à votre compte AirlinesFrom pour gérer vos réservations et préférences.',
+        title: 'Connexion - AirlineFrom',
+        description: 'Connectez-vous à votre compte AirlineFrom pour gérer vos réservations et préférences.',
         heading: 'Connexion'
       },
       register: {
-        title: 'S\'inscrire - AirlinesFrom',
-        description: 'Créez un nouveau compte AirlinesFrom pour commencer à réserver des vols et gérer vos préférences de voyage.',
+        title: 'S\'inscrire - AirlineFrom',
+        description: 'Créez un nouveau compte AirlineFrom pour commencer à réserver des vols et gérer vos préférences de voyage.',
         heading: 'Créer un compte'
       },
       myAccount: {
-        title: 'Mon compte - AirlinesFrom',
-        description: 'Gérez votre compte AirlinesFrom, consultez vos réservations et mettez à jour vos préférences de voyage.',
+        title: 'Mon compte - AirlineFrom',
+        description: 'Gérez votre compte AirlineFrom, consultez vos réservations et mettez à jour vos préférences de voyage.',
         heading: 'Mon compte'
       }
     },

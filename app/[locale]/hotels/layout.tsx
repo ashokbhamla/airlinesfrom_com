@@ -28,9 +28,9 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       'airport hotel deals',
       'convenient airport hotels'
     ],
-    authors: [{ name: `${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'} Team` }],
-    creator: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom',
-    publisher: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom',
+    authors: [{ name: `${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlineFrom'} Team` }],
+    creator: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlineFrom',
+    publisher: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlineFrom',
     formatDetection: {
       email: false,
       address: false,
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       title: 'Hotels Near US Airports - Find Airport Hotels in America',
       description: 'Discover the best hotels near major US airports including LAX, JFK, ATL, ORD, DFW, and more. Find comfortable accommodations with airport shuttle service, great amenities, and competitive rates.',
       url: `${baseUrl}/${locale}/hotels`,
-      siteName: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom',
+      siteName: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlineFrom',
       locale: locale,
       type: 'website',
       images: [
@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
           url: `${baseUrl}/images/airport-hotels-og.jpg`,
           width: 1200,
           height: 630,
-          alt: `US Airport Hotels - ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlinesFrom'}`,
+          alt: `US Airport Hotels - ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlineFrom'}`,
         },
       ],
     },

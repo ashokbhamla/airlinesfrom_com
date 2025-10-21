@@ -1,4 +1,4 @@
-# Sitemap Setup for AirlinesFrom.com
+# Sitemap Setup for AirlineFrom.com
 
 ## Environment Variables
 
