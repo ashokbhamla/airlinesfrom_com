@@ -1453,7 +1453,7 @@ const FlightTemplate = memo(function FlightTemplate({
       {/* JSON-LD Schemas */}
       {(() => {
         const currentYear = new Date().getFullYear();
-        const pageUrl = `${process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesmap.com'}/${locale === 'en' ? '' : locale + '/'}flights/${params.slug}`;
+        const pageUrl = `${process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com'}/${locale === 'en' ? '' : locale + '/'}flights/${params.slug}`;
         
         // Prepare FAQ data for schema
         const faqData = pageData?.faqs || [];

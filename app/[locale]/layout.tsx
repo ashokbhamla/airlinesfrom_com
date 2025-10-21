@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const translations = getTranslations(locale);
   const header = envConfig.header;
   
-  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesmap.com';
+  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com';
   const localePath = locale === 'en' ? '' : `/${locale}`;
   const canonicalUrl = `${baseUrl}${localePath}`;
 

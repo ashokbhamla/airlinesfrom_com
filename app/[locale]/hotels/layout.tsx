@@ -3,7 +3,7 @@ import { generateAlternateUrls } from '@/lib/canonical';
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const { locale } = params;
-  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://flightsearchs.com';
+  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinesfrom.com';
   
   return {
     title: {
