@@ -1,4 +1,31 @@
 import { Locale } from './i18n';
+import { getCurrentDomain, getCurrentDomainWithRequest } from './getCurrentDomain';
+
+/**
+ * Generate canonical URL with request context (for server-side rendering)
+ * @param path - The path without locale prefix
+ * @param locale - The locale
+ * @param request - The request object (optional)
+ * @returns Full canonical URL
+ */
+export function generateCanonicalUrlWithRequest(
+  path: string, 
+  locale: Locale, 
+  request?: { headers: { host?: string } }
+): string {
+  const baseUrl = getCurrentDomainWithRequest(request);
+  
+  // Remove leading slash if present
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  
+  // For English (default), don't include /en/ prefix
+  if (locale === 'en') {
+    return `${baseUrl}/${cleanPath}`;
+  }
+  
+  // For other locales, include locale prefix
+  return `${baseUrl}/${locale}/${cleanPath}`;
+}
 
 /**
  * Generate canonical URL for any page with proper language support
@@ -7,11 +34,7 @@ import { Locale } from './i18n';
  * @returns Full canonical URL
  */
 export function generateCanonicalUrl(path: string, locale: Locale): string {
-  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com';
-  
-  if (!baseUrl) {
-    throw new Error('NEXT_PUBLIC_DOMAIN environment variable is required');
-  }
+  const baseUrl = getCurrentDomain();
   
   // Remove leading slash if present
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
@@ -31,11 +54,7 @@ export function generateCanonicalUrl(path: string, locale: Locale): string {
  * @returns Object with language codes as keys and URLs as values
  */
 export function generateAlternateUrls(path: string): Record<string, string> {
-  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com';
-  
-  if (!baseUrl) {
-    throw new Error('NEXT_PUBLIC_DOMAIN environment variable is required');
-  }
+  const baseUrl = getCurrentDomain();
   
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
   

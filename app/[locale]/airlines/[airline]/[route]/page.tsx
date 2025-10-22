@@ -6,6 +6,7 @@ import AirlineRouteContent from '@/components/AirlineRouteContent';
 import { generateFallbackContent } from '@/lib/fallbackContentGenerator';
 import { generateDatasetSchema } from '@/lib/datasetSchemaGenerator';
 import { generateAirlineCanonicalUrl, generateAlternateUrls } from '@/lib/canonical';
+import { getCurrentDomain } from '@/lib/getCurrentDomain';
 import SchemaOrg from '@/components/SchemaOrg';
 import { breadcrumbSchema } from '@/lib/schema';
 import { fetchAirlineContent, fetchAirlineData, fetchAirlineAirportContent, fetchAirlineAirportData, fetchAirlineContactInfo, fetchCityByIata } from '@/lib/api';
@@ -52,6 +53,11 @@ function renderContent(content: any): string {
       .replace(/\\u0022/g, '"')
       .replace(/\\n/g, '\n')
       .replace(/\\t/g, '\t');
+    
+    // Strip H1 tags and convert them to H2 to avoid multiple H1 tags (SEO issue)
+    cleaned = cleaned
+      .replace(/<h1([^>]*)>/gi, '<h2$1>')
+      .replace(/<\/h1>/gi, '</h2>');
     
     return cleaned;
   }
@@ -2373,7 +2379,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlineFrom",
-        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com",
+        "url": process.env.NEXT_PUBLIC_SITE_URL || getCurrentDomain(),
         "logo": process.env.NEXT_PUBLIC_COMPANY_LOGO || "https://airlinefrom.com/logo.png",
         "description": process.env.NEXT_PUBLIC_COMPANY_DESCRIPTION || "Find the best flight deals, hotels, and travel packages",
         "foundingDate": process.env.NEXT_PUBLIC_COMPANY_FOUNDING_DATE || "2018",
@@ -2400,7 +2406,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "@context": "https://schema.org",
         "@type": "TravelAgency",
         "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlineFrom",
-        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com",
+        "url": process.env.NEXT_PUBLIC_SITE_URL || getCurrentDomain(),
         "description": process.env.NEXT_PUBLIC_COMPANY_DESCRIPTION || "Find the best flight deals, hotels, and travel packages",
         "address": {
           "@type": "PostalAddress",
@@ -2419,7 +2425,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": process.env.NEXT_PUBLIC_SITE_NAME || "AirlineFrom",
-        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com",
+        "url": process.env.NEXT_PUBLIC_SITE_URL || getCurrentDomain(),
         "description": process.env.NEXT_PUBLIC_SITE_DESCRIPTION || "Find the best flight deals, hotels, and travel packages",
         "inLanguage": locale === 'en' ? 'en-US' : locale === 'es' ? 'es-ES' : locale === 'ru' ? 'ru-RU' : 'fr-FR',
         "potentialAction": {
@@ -2919,7 +2925,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlineFrom",
-        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com",
+        "url": process.env.NEXT_PUBLIC_SITE_URL || getCurrentDomain(),
         "potentialAction": {
           "@type": "SearchAction",
           "target": {
@@ -2935,7 +2941,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlineFrom",
-        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com",
+        "url": process.env.NEXT_PUBLIC_SITE_URL || getCurrentDomain(),
         "logo": `${process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com"}/logo.png`,
         "description": process.env.NEXT_PUBLIC_COMPANY_DESCRIPTION || "Compare airlines and find the best flight deals",
         "foundingDate": process.env.NEXT_PUBLIC_COMPANY_FOUNDING_DATE || "2020",
@@ -3047,7 +3053,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "@context": "https://schema.org",
         "@type": "TravelAgency",
         "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlineFrom",
-        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com",
+        "url": process.env.NEXT_PUBLIC_SITE_URL || getCurrentDomain(),
         "description": process.env.NEXT_PUBLIC_COMPANY_DESCRIPTION || "Compare airlines and find the best flight deals",
         "address": {
           "@type": "PostalAddress",
@@ -3248,7 +3254,7 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "@type": "LocalBusiness",
         "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "AirlineFrom",
         "description": process.env.NEXT_PUBLIC_COMPANY_DESCRIPTION || "Compare airlines and find the best flight deals",
-        "url": process.env.NEXT_PUBLIC_SITE_URL || "https://airlinefrom.com",
+        "url": process.env.NEXT_PUBLIC_SITE_URL || getCurrentDomain(),
         "telephone": process.env.NEXT_PUBLIC_PHONE || "+1-888-319-6206",
         "email": process.env.NEXT_PUBLIC_EMAIL || "support@airlinefrom.com",
         "address": {
