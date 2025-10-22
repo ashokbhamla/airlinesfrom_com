@@ -15,6 +15,25 @@ export function middleware(req: NextRequest) {
     return NextResponse.next();
   }
 
+  // Normalize airline route URLs to lowercase
+  // Pattern: /airlines/[airline]/[route] or /[locale]/airlines/[airline]/[route]
+  const airlineRoutePattern = /^(\/[a-z]{2})?\/airlines\/([a-zA-Z0-9]+)\/([a-zA-Z0-9]+)(?:\/.*)?$/i;
+  const match = pathname.match(airlineRoutePattern);
+  
+  if (match) {
+    const [, localePrefix, airlineCode, routeCode] = match;
+    const normalizedAirlineCode = airlineCode.toLowerCase();
+    const normalizedRouteCode = routeCode.toLowerCase();
+    
+    // If the codes are not already lowercase, redirect to lowercase version
+    if (airlineCode !== normalizedAirlineCode || routeCode !== normalizedRouteCode) {
+      const normalizedPath = `${localePrefix || ''}/airlines/${normalizedAirlineCode}/${normalizedRouteCode}`;
+      const url = req.nextUrl.clone();
+      url.pathname = normalizedPath;
+      return NextResponse.redirect(url, 301); // Permanent redirect
+    }
+  }
+
   // Check if pathname starts with a supported locale
   const pathnameHasLocale = supportedLocales.some(
     (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)

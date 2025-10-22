@@ -141,7 +141,7 @@ function getAirlineCodeFromSlug(slug: string): string {
     'hawaiian': 'ha'
   };
   
-  return airlineCodeMap[slug.toLowerCase()] || slug.toUpperCase();
+  return airlineCodeMap[slug.toLowerCase()] || slug.toLowerCase();
 }
 
 // Helper function to get airline name from code
@@ -607,17 +607,17 @@ function parseFlightSlug(route: string): { departureIata: string; arrivalIata: s
   if (parts.length >= 2) {
     // Route pair like "bkk-can"
     return {
-      departureIata: parts[0].toUpperCase(),
-      arrivalIata: parts[1].toUpperCase()
+      departureIata: parts[0].toLowerCase(),
+      arrivalIata: parts[1].toLowerCase()
     };
   } else if (parts.length === 1) {
     // Single airport like "ixz"
     return {
-      departureIata: parts[0].toUpperCase(),
+      departureIata: parts[0].toLowerCase(),
       arrivalIata: null
     };
   }
-  return { departureIata: 'DEL', arrivalIata: 'BOM' }; // fallback
+  return { departureIata: 'del', arrivalIata: 'bom' }; // fallback
 }
 
 export default async function AirlineRoutePage({ params }: { params: { locale: string; airline: string; route: string } }) {
