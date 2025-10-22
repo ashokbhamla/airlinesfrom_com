@@ -1915,9 +1915,9 @@ const FlightTemplate = memo(function FlightTemplate({
               "telephone": process.env.NEXT_PUBLIC_PHONE || "+1-302-123-4567",
               "email": process.env.NEXT_PUBLIC_EMAIL || "info@airlinefrom.com",
               "sameAs": [
-                process.env.NEXT_PUBLIC_FACEBOOK || "https://facebook.com/airlinesfrom",
-                process.env.NEXT_PUBLIC_TWITTER || "https://twitter.com/airlinesfrom",
-                process.env.NEXT_PUBLIC_INSTAGRAM || "https://instagram.com/airlinesfrom"
+                process.env.NEXT_PUBLIC_FACEBOOK || "https://facebook.com/airlinefrom",
+                process.env.NEXT_PUBLIC_TWITTER || "https://twitter.com/airlinefrom",
+                process.env.NEXT_PUBLIC_INSTAGRAM || "https://instagram.com/airlinefrom"
               ]
             }} />
 

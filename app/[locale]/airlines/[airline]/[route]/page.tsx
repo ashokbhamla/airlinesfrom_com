@@ -407,8 +407,8 @@ export async function generateMetadata({ params }: { params: { locale: string; a
         .replace('{departureCity}', flightData?.metadata?.departure_city || contentData?.departure_city || getCityName(departureIata))
         .replace('{arrivalCity}', t.flightPage.destinationsWorldwide));
     
-    // Limit title to 45 characters to accommodate phone number suffix (total ~70 chars)
-    const title = rawTitle.length > 45 ? rawTitle.substring(0, 45) + '...' : rawTitle;
+    // Limit title to 35 characters to accommodate phone number suffix (total ~60 chars)
+    const title = rawTitle.length > 35 ? rawTitle.substring(0, 35) + '...' : rawTitle;
 
     // Use dynamic data from content API for description
     const description = contentData?.meta_description || (arrivalIata ?
@@ -494,8 +494,8 @@ export async function generateMetadata({ params }: { params: { locale: string; a
         card: 'summary_large_image',
         title,
         description,
-        site: '@airlinesfrom',
-        creator: '@airlinesfrom',
+        site: '@airlinefrom',
+        creator: '@airlinefrom',
         images: [
           getAirlineLogoUrl(airlineCode, 'large'),
           ...(arrivalIata ? [
@@ -585,8 +585,8 @@ export async function generateMetadata({ params }: { params: { locale: string; a
         card: 'summary_large_image',
         title,
         description,
-        site: '@airlinesfrom',
-        creator: '@airlinesfrom',
+        site: '@airlinefrom',
+        creator: '@airlinefrom',
         images: [
           getAirlineLogoUrl(airlineCode, 'large'),
           ...(arrivalIata ? [
@@ -2380,10 +2380,10 @@ export default async function AirlineRoutePage({ params }: { params: { locale: s
         "telephone": process.env.NEXT_PUBLIC_PHONE || "+1-888-319-6206",
         "email": process.env.NEXT_PUBLIC_EMAIL || "support@airlinefrom.com",
         "sameAs": [
-          process.env.NEXT_PUBLIC_FACEBOOK_URL || "https://facebook.com/airlinesfrom",
-          process.env.NEXT_PUBLIC_TWITTER_URL || "https://twitter.com/airlinesfrom",
-          process.env.NEXT_PUBLIC_INSTAGRAM_URL || "https://instagram.com/airlinesfrom",
-          process.env.NEXT_PUBLIC_LINKEDIN_URL || "https://linkedin.com/company/airlinesfrom"
+          process.env.NEXT_PUBLIC_FACEBOOK_URL || "https://facebook.com/airlinefrom",
+          process.env.NEXT_PUBLIC_TWITTER_URL || "https://twitter.com/airlinefrom",
+          process.env.NEXT_PUBLIC_INSTAGRAM_URL || "https://instagram.com/airlinefrom",
+          process.env.NEXT_PUBLIC_LINKEDIN_URL || "https://linkedin.com/company/airlinefrom"
         ],
         "address": {
           "@type": "PostalAddress",

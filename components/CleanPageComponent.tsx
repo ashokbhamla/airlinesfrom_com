@@ -74,7 +74,8 @@ export default function CleanPageComponent({
       {/* Page Header - SINGLE TITLE */}
       <Box sx={{ mb: 4 }}>
         <Typography 
-          variant="h1" 
+          component="h1"
+          variant="h2" 
           sx={{ 
             fontSize: '2.5rem',
             fontWeight: 700,

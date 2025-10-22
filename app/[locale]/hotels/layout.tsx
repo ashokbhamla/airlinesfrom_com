@@ -7,8 +7,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   
   return {
     title: {
-      template: `%s | ☎ 𝟖𝟖𝟖-𝟑𝟏𝟗-𝟔𝟐𝟎𝟔`,
-      default: `Hotels Near US Airports - Find Airport Hotels in America | ☎ 𝟖𝟖𝟖-𝟑𝟏𝟗-𝟔𝟐𝟎𝟔`
+      template: `%s | ☎ 𝟖8𝟖-𝟑1𝟗-𝟔𝟐0𝟔`,
+      default: `Hotels Near US Airports - Find Airport Hotels in America | ☎ 𝟖8𝟖-𝟑1𝟗-𝟔𝟐0𝟔`
     },
     description: 'Discover the best hotels near major US airports including LAX, JFK, ATL, ORD, DFW, and more. Find comfortable accommodations with airport shuttle service, great amenities, and competitive rates.',
     keywords: [

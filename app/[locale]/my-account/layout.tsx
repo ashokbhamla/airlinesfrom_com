@@ -7,8 +7,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   
   return {
     title: {
-      template: `%s | ☎ 𝟖𝟖𝟖-𝟑𝟏𝟗-𝟔𝟐𝟎𝟔`,
-      default: `My Account - Manage Your Travel Profile | ☎ 𝟖𝟖𝟖-𝟑𝟏𝟗-𝟔𝟐𝟎𝟔`
+      template: `%s | ☎ 𝟖8𝟖-𝟑1𝟗-𝟔𝟐0𝟔`,
+      default: `My Account - Manage Your Travel Profile | ☎ 𝟖8𝟖-𝟑1𝟗-𝟔𝟐0𝟔`
     },
     description: `Manage your ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlineFrom'} account, view booking history, update travel preferences, and access exclusive member benefits.`,
     keywords: [

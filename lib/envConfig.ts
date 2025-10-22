@@ -10,9 +10,9 @@ export const envConfig = {
       login: process.env.NEXT_PUBLIC_NAV_LOGIN || '/login'
     },
     socialMedia: {
-      facebook: process.env.NEXT_PUBLIC_FACEBOOK_URL || 'https://facebook.com/airlinesfrom',
-      twitter: process.env.NEXT_PUBLIC_TWITTER_URL || 'https://twitter.com/airlinesfrom',
-      instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://instagram.com/airlinesfrom'
+      facebook: process.env.NEXT_PUBLIC_FACEBOOK_URL || 'https://facebook.com/airlinefrom',
+      twitter: process.env.NEXT_PUBLIC_TWITTER_URL || 'https://twitter.com/airlinefrom',
+      instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://instagram.com/airlinefrom'
     }
   },
   

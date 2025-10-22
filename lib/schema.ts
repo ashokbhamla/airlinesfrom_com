@@ -25,9 +25,9 @@ export function orgSchema(header: any): Json | null {
     },
     logo: companyLogo,
     sameAs: [
-      process.env.NEXT_PUBLIC_FACEBOOK_URL || 'https://facebook.com/airlinesfrom',
-      process.env.NEXT_PUBLIC_TWITTER_URL || 'https://twitter.com/airlinesfrom',
-      process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://instagram.com/airlinesfrom'
+      process.env.NEXT_PUBLIC_FACEBOOK_URL || 'https://facebook.com/airlinefrom',
+      process.env.NEXT_PUBLIC_TWITTER_URL || 'https://twitter.com/airlinefrom',
+      process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://instagram.com/airlinefrom'
     ],
   };
 }
