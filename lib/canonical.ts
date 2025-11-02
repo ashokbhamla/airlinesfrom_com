@@ -125,6 +125,17 @@ export function generateFlightsFromCanonicalUrl(airport: string, locale: Locale)
 }
 
 /**
+ * Generate canonical URL for airport terminal pages (airline-airport pages)
+ * @param airline - Airline code (e.g., 'v7')
+ * @param airport - Airport code (e.g., 'agp')
+ * @param locale - The locale
+ * @returns Canonical URL for airport terminal page
+ */
+export function generateAirportTerminalCanonicalUrl(airline: string, airport: string, locale: Locale = 'en'): string {
+  return generateCanonicalUrl(`/airportsterminal/${airline}/${airport}`, locale);
+}
+
+/**
  * Generate canonical URL for static pages
  * @param page - Page path (e.g., 'about-us', 'contact-us')
  * @param locale - The locale
