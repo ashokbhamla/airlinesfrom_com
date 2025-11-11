@@ -1,9 +1,11 @@
 import { Metadata } from 'next';
-import { generateAlternateUrls } from '@/lib/canonical';
+import { generateAlternateUrls, generateStaticPageCanonicalUrl, getCanonicalBaseUrl } from '@/lib/canonical';
+import { localeFromParam } from '@/lib/i18n';
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
-  const { locale } = params;
-  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com';
+  const locale = localeFromParam(params.locale);
+  const baseUrl = getCanonicalBaseUrl();
+  const canonicalUrl = generateStaticPageCanonicalUrl('my-account', locale);
   
   return {
     title: {
@@ -32,13 +34,13 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     },
     metadataBase: new URL(baseUrl),
     alternates: {
-      canonical: `${baseUrl}/${locale}/my-account`,
+      canonical: canonicalUrl,
       languages: generateAlternateUrls('/my-account')
     },
     openGraph: {
       title: 'My Account - Manage Your Travel Profile',
       description: `Manage your ${process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlineFrom'} account, view booking history, update travel preferences, and access exclusive member benefits.`,
-      url: `${baseUrl}/${locale}/my-account`,
+      url: canonicalUrl,
       siteName: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlineFrom',
       locale: locale,
       type: 'website',

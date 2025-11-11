@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { Typography, Box, Container, Grid, Card, CardContent, Button, Chip } from '@mui/material';
 import { localeFromParam } from '@/lib/i18n';
-import { generateFlightsFromCanonicalUrl, generateAlternateUrls } from '@/lib/canonical';
+import { generateFlightsFromCanonicalUrl, generateAlternateUrls, getCanonicalBaseUrl } from '@/lib/canonical';
 import SchemaOrg from '@/components/SchemaOrg';
 import { breadcrumbSchema } from '@/lib/schema';
 import { fetchDestinationFlightContent, fetchDestinationFlightData, fetchFlightContent, fetchFlightData } from '@/lib/api';
@@ -84,6 +84,7 @@ export async function generateMetadata({ params }: { params: { locale: string, a
 export default async function FlightDestinationPage({ params }: { params: { locale: string, airport: string } }) {
   const locale = localeFromParam(params.locale);
   const airportCode = params.airport.toUpperCase();
+  const baseUrl = getCanonicalBaseUrl();
   
   // Check if this is a route-specific page (e.g., del-bom)
   const isRoutePage = airportCode.includes('-');
@@ -818,11 +819,11 @@ export default async function FlightDestinationPage({ params }: { params: { loca
         "@type": "WebPage",
         "name": contentData?.title || `Flights from ${cityName} (${airportCode})`,
         "description": contentData?.description || `Find cheap flights from ${cityName} to destinations worldwide.`,
-        "url": `${process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com'}/flights/${params.airport}`,
+        "url": `${baseUrl}/flights/${params.airport}`,
         "isPartOf": {
           "@type": "WebSite",
           "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "airlinefrom.com",
-          "url": process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com'
+          "url": baseUrl
         },
         "mainEntity": {
           "@type": "Airport",
@@ -844,8 +845,8 @@ export default async function FlightDestinationPage({ params }: { params: { loca
           "name": `Flights from ${cityName}`,
           "description": contentData?.description || `Find cheap flights from ${cityName} to destinations worldwide`,
           "image": [
-            `${process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com'}/images/airports/${airportCode}.jpg`,
-            `${process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com'}/images/flights/generic-flight.jpg`
+            `${baseUrl}/images/airports/${airportCode}.jpg`,
+            `${baseUrl}/images/flights/generic-flight.jpg`
           ],
           "brand": {
             "@type": "Brand",
@@ -985,8 +986,8 @@ export default async function FlightDestinationPage({ params }: { params: { loca
         "@type": "TravelAgency",
         "name": process.env.NEXT_PUBLIC_COMPANY_NAME || "airlinefrom.com",
         "description": "Find cheap flights, hotels, and travel deals",
-        "url": process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com',
-        "logo": `${process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com'}${process.env.NEXT_PUBLIC_LOGO_URL || "/logo.png"}`,
+        "url": baseUrl,
+        "logo": `${baseUrl}${process.env.NEXT_PUBLIC_LOGO_URL || "/logo.png"}`,
         "address": {
           "@type": "PostalAddress",
           "addressCountry": "US"

@@ -1,5 +1,50 @@
+import { headers } from 'next/headers';
 import { Locale } from './i18n';
 import { getCurrentDomain, getCurrentDomainWithRequest } from './getCurrentDomain';
+
+function extractPrimaryHeaderValue(value: string | null): string | null {
+  if (!value) return null;
+  return value.split(',')[0]?.trim() || null;
+}
+
+function resolveProtocolFromHeaders(host: string | null, protocolHeader: string | null): string {
+  const protocol = extractPrimaryHeaderValue(protocolHeader);
+  if (protocol) {
+    return protocol;
+  }
+
+  if (host && (host.startsWith('localhost') || host.startsWith('127.') || host.endsWith('.onrender.com'))) {
+    return 'http';
+  }
+
+  return 'https';
+}
+
+function resolveBaseUrlFromHeaders(): string | null {
+  try {
+    const headersList = headers();
+    const hostHeader = extractPrimaryHeaderValue(
+      headersList.get('x-forwarded-host') || headersList.get('host')
+    );
+
+    if (!hostHeader) {
+      return null;
+    }
+
+    const protocol = resolveProtocolFromHeaders(
+      hostHeader,
+      headersList.get('x-forwarded-proto') || headersList.get('x-forwarded-protocol')
+    );
+
+    return `${protocol}://${hostHeader}`;
+  } catch (error) {
+    return null;
+  }
+}
+
+export function getCanonicalBaseUrl(): string {
+  return resolveBaseUrlFromHeaders() || getCurrentDomain();
+}
 
 /**
  * Generate canonical URL with request context (for server-side rendering)
@@ -34,7 +79,7 @@ export function generateCanonicalUrlWithRequest(
  * @returns Full canonical URL
  */
 export function generateCanonicalUrl(path: string, locale: Locale): string {
-  const baseUrl = getCurrentDomain();
+  const baseUrl = getCanonicalBaseUrl();
   
   // Remove leading slash if present
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
@@ -54,7 +99,7 @@ export function generateCanonicalUrl(path: string, locale: Locale): string {
  * @returns Object with language codes as keys and URLs as values
  */
 export function generateAlternateUrls(path: string): Record<string, string> {
-  const baseUrl = getCurrentDomain();
+  const baseUrl = getCanonicalBaseUrl();
   
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
   

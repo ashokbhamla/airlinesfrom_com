@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next'
+import { getCanonicalBaseUrl } from '@/lib/canonical'
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com'
+  const baseUrl = getCanonicalBaseUrl()
   
   return {
     rules: [

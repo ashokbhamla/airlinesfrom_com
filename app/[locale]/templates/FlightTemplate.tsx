@@ -1,6 +1,7 @@
 'use client';
 
 import { Locale } from '@/lib/i18n';
+import { getCurrentDomainClient } from '@/lib/getCurrentDomain';
 import { Typography, Box, Container, Grid, Card, CardContent, Button } from '@mui/material';
 import FlightSearchBox from '@/components/FlightSearchBox';
 import ClientPriceGraph from '@/components/ClientPriceGraph';
@@ -1453,7 +1454,8 @@ const FlightTemplate = memo(function FlightTemplate({
       {/* JSON-LD Schemas */}
       {(() => {
         const currentYear = new Date().getFullYear();
-        const pageUrl = `${process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com'}/${locale === 'en' ? '' : locale + '/'}flights/${params.slug}`;
+        const baseDomain = getCurrentDomainClient();
+        const pageUrl = `${baseDomain}/${locale === 'en' ? '' : `${locale}/`}flights/${params.slug}`;
         
         // Prepare FAQ data for schema
         const faqData = pageData?.faqs || [];

@@ -1,9 +1,11 @@
 import { Metadata } from 'next';
-import { generateAlternateUrls } from '@/lib/canonical';
+import { generateAlternateUrls, generateStaticPageCanonicalUrl, getCanonicalBaseUrl } from '@/lib/canonical';
+import { localeFromParam } from '@/lib/i18n';
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
-  const { locale } = params;
-  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com';
+  const locale = localeFromParam(params.locale);
+  const baseUrl = getCanonicalBaseUrl();
+  const canonicalUrl = generateStaticPageCanonicalUrl('airlines', locale);
   
   return {
     title: {
@@ -37,13 +39,13 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     },
     metadataBase: new URL(baseUrl),
     alternates: {
-      canonical: `${baseUrl}/${locale}/airlines`,
+      canonical: canonicalUrl,
       languages: generateAlternateUrls('/airlines')
     },
     openGraph: {
       title: 'Airlines - Compare US Airlines & Find Best Flight Deals',
       description: 'Compare major US airlines including American Airlines, Delta, United, Southwest, and more. Find the best flight deals and routes.',
-      url: `${baseUrl}/${locale}/airlines`,
+      url: canonicalUrl,
       siteName: process.env.NEXT_PUBLIC_COMPANY_NAME || 'AirlineFrom',
       locale: locale,
       type: 'website',

@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 import { redirect } from 'next/navigation';
 import { Box, Container, Typography, Grid, Card, CardContent, Button, Chip, FormControl, InputLabel, Select, MenuItem, Checkbox, FormControlLabel, FormGroup, Paper, Collapse } from '@mui/material';
-import { localeFromParam } from '@/lib/i18n';
-import { generateFlightCanonicalUrl, generateAlternateUrls } from '@/lib/canonical';
+import { localeFromParam, Locale } from '@/lib/i18n';
+import { generateFlightCanonicalUrl, generateAlternateUrls, generateFlightsFromCanonicalUrl, getCanonicalBaseUrl } from '@/lib/canonical';
 import SchemaOrg from '@/components/SchemaOrg';
 import { breadcrumbSchema } from '@/lib/schema';
 import { fetchFlightContent, fetchFlightData, fetchDestinationFlightContent, fetchDestinationFlightData } from '@/lib/api';
@@ -16,7 +16,7 @@ import FlightSearchBox from '@/components/FlightSearchBox';
 
 // Helper function to get domain ID based on current domain
 function getDomainId(): 1 | 2 {
-  const domain = process.env.NEXT_PUBLIC_DOMAIN || 'airlinefrom.com';
+  const domain = getCanonicalBaseUrl();
   // domain_id mapping:
   // 1 = airlinefrom.com
   // 2 = other domain (if you have multiple domains)
@@ -43,13 +43,6 @@ function parseFlightSlug(slug: string): { departureIata: string; arrivalIata: st
   // For single codes, treat them as airport codes (like aad, hyd, etc.)
   // These are dynamic route pages that can serve multiple airports
   return { departureIata: slug.toUpperCase(), arrivalIata: '' };
-}
-
-// Helper function to generate canonical URL for flights from airport
-function generateFlightsFromCanonicalUrl(airportCode: string, locale: string): string {
-  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com';
-  const localePath = locale === 'en' ? '' : `/${locale}`;
-  return `${baseUrl}${localePath}/flights/from/${airportCode}`;
 }
 
 // Helper function to truncate description to 158 characters
@@ -136,7 +129,7 @@ export async function generateMetadata({ params }: { params: { locale: string; s
     const cityName = getCityName(airportCode);
     
     // Generate canonical URL and alternate URLs for single airport
-    const canonicalUrl = generateFlightsFromCanonicalUrl(params.slug, locale);
+    const canonicalUrl = generateFlightsFromCanonicalUrl(params.slug, locale as Locale);
     const alternateUrls = generateAlternateUrls(`/flights/${params.slug}`);
     
     let contentData: any = null;

@@ -13,6 +13,7 @@ import CriticalResourceLoader from '@/components/CriticalResourceLoader';
 import AboveTheFoldOptimizer from '@/components/AboveTheFoldOptimizer';
 import ServiceWorker from '@/components/ServiceWorker';
 import { Locale, localeFromParam } from '@/lib/i18n';
+import { generateCanonicalUrl, getCanonicalBaseUrl } from '@/lib/canonical';
 import { orgSchema, websiteSchema, localBusinessSchema } from '@/lib/schema';
 import ClientThemeProvider from '@/components/ClientThemeProvider';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
@@ -31,9 +32,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const translations = getTranslations(locale);
   const header = envConfig.header;
   
-  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN || 'https://airlinefrom.com';
-  const localePath = locale === 'en' ? '' : `/${locale}`;
-  const canonicalUrl = `${baseUrl}${localePath}`;
+  const baseUrl = getCanonicalBaseUrl();
+  const canonicalUrl = generateCanonicalUrl('/', locale);
 
   // Use translated company name based on locale
   const companyName = locale === 'en' ? 'AirlineFrom' : 
